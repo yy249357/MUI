@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>五角星点击</title>
+</head>
+<style>
+*{padding: 0; margin: 0;}
+.grid{
+	display: flex;
+	width: 36px;
+	height: 36px;
+	align-items: center;
+	justify-content: center;
+	float: left;
+}
+label{
+	width: 30px;
+	height: 30px;
+	position: relative;
+	font-size: 24px;
+}
+label{ -webkit-tap-highlight-color:rgba(0,0,0,0);}
+input[type="checkbox"] + label::before{
+	content:'☆';
+	position: absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	font-size: 24px;
+}
+input[type="checkbox"]:checked + label::before{
+	width: 30px!important;
+	height: 30px!important;
+	content: '★';
+	font-size: 24px!important;
+	color:#ff9800;
+}
+input[type="checkbox"]{
+	position: absolute;
+	clip:rect(0,0,0,0);
+}
+</style>
+<body>
+<div class="grid">
+	<input type="checkbox" id="star1">
+	<label for="star1"></label>
+</div>
+<div class="grid">
+	<input type="checkbox" id="star2">
+	<label for="star2"></label>
+</div>
+<div class="grid">
+	<input type="checkbox" id="star3">
+	<label for="star3"></label>
+</div>
+<div class="grid">
+	<input type="checkbox" id="star4">
+	<label for="star4"></label>
+</div>
+<div class="grid">
+	<input type="checkbox" id="star5">
+	<label for="star5"></label>
+</div>
+</body>
+</html>

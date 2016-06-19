@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="color.css">
+</head>
+<body>
+<style>
+.icon {
+    display: inline-block;
+    width: 20px; height: 20px;
+    overflow: hidden;
+}
+.icon-del {
+    background: url(delete.png) no-repeat center;
+}
+.icon > .icon {
+    position: relative;
+    left: -20px;
+    border-right: 20px solid transparent;
+    -webkit-filter: drop-shadow(20px 0);
+    filter: drop-shadow(20px 0);    
+}
+</style>
+<div class="show">
+	<div class="demo">
+    	<p><strong>原始图标</strong></p>
+    	<i class="icon icon-del"></i>
+        <p><strong>可以变色的图标</strong></p>
+        <i class="icon"><i id="iconDel" class="icon icon-del"></i></i>
+        <p>修改颜色：<input type="color" id="iconColor" class="ui_color_input"></p>
+        
+        <p class="remind">上面的颜色选择器由lulu UI友情支持！</p>
+    </div>
+</div>
+<script src="sea.js"></script>
+<script>
+seajs.config({
+	base: 'http://qidian.gtimg.com/lulu/theme/modern/js'	
+});
+seajs.use(['common/ui/Color.js'], function(Color) {
+	var elIconDel = $('#iconDel');
+	new Color($('#iconColor').change(function() {
+		var dropShadow = 'drop-shadow(20px 0 '+ this.value +')';
+		elIconDel.css({
+			webkitFilter: dropShadow,
+			filter: dropShadow	
+		});	
+	}));
+});
+</script>
+</body>
+</html>

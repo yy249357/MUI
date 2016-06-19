@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+body{
+	background: #ccc;
+}
+.star{
+	padding: 0.6em 1.4em;
+	border-radius: 0.8em;
+	outline: none;
+	border: none;
+	box-shadow: 1px 1px 1px #333;
+}
+.disabled{
+	cursor:not-allowed;
+}
+.none{
+	cursor:none;
+}
+.zoom{
+	cursor:zoom-in;
+}
+</style>
+<body>
+<button class="star disabled">点我1</button>
+&emsp;&emsp;
+<button class="star none">点我2</button>
+&emsp;&emsp;
+<button class="star zoom">点击3</button>
+</body>
+</html>

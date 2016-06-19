@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+body{
+	background: #ccc;
+}
+.star{
+	display: block;	
+	width: 80px;
+	height: 30px;
+	margin: 40px auto;
+	cursor:pointer;
+	position: relative;
+	user-select:none;
+}
+.star::before{
+	content: '';
+	position: absolute;
+	top:-20px;
+	right:-20px;
+	bottom:-20px;
+	left:-20px;
+}
+</style>
+<body>
+<button class="star">点击</button>
+</body>
+</html>

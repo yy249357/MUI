@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>Document</title>
+</head>
+<style>
+label{
+	width: 120px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 80px auto;
+	cursor: not-allowed;
+	position: relative;
+	-webkit-user-select:none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input[type="checkbox"]{
+	position: absolute;
+	clip:rect(0,0,0,0);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input[type="checkbox"] + label::before{
+	content:'';
+	position: absolute;
+	top:-10px;
+	left:-10px;
+	right:-10px;
+	bottom:-10px;
+	border: 8px solid orange;
+	transform:skewX(-30deg);
+	outline: .6em solid  #655;
+	outline-offset: 16px;
+	border-radius: .2em;
+	box-shadow: 0 0 0 6px red,
+				0 0 0 12px blue,
+				0 0 0 24px green;
+	background: repeating-linear-gradient(10deg, #58a 0, #58a 15px, yellowgreen 15px, yellowgreen 34px);
+	z-index: -1;
+}
+input[type="checkbox"]:checked + label{
+	cursor: zoom-in;
+}
+input[type="checkbox"]:checked + label::before{
+	transform: skewX(0);
+	outline: 1px dashed #fff;
+	outline-offset: -24px;
+	border-radius: 50%;
+	background: url(22.jpg) no-repeat #58a;
+	background-clip: content-box;
+	background-origin: content-box;
+	background-position: left 10px top 20px;
+	background-size: 30%;
+}
+</style>
+<body>
+	<input type="checkbox" id="mm">
+	<label for="mm">点我</label>
+</body>
+</html>

@@ -1,0 +1,6 @@
+/test
+/src/modules
+/src/compress.bat
+/src/*.zip
+/src/yuicompressor-2.4.8.jar
+/src/*.min.js

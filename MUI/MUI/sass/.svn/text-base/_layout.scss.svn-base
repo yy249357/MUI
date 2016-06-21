@@ -1,0 +1,175 @@
+html, body, .wrap {height: 100%;}
+body > .wrap{
+	height: auto;
+	min-height: 100%;
+}
+article{
+	padding-bottom: $footer-height;
+}
+
+//分散对齐
+.dis-justify{
+	@include dis-justify(700px, 30%);
+}
+
+//间隔相等分布
+.orderShare-box{
+	li{
+		width: 28%;
+		padding: 5px 10px;
+		float: left;
+		img{
+			width: 100%
+		}
+	}
+	@media screen and (min-width: 250px){
+		li:nth-of-type(3n-1){
+			padding: 5px 0;
+		}
+	}	
+}
+
+// footer固定
+.b-fixed{
+	@include foot($footer-height);
+	ul{
+		text-align: center;
+		overflow: hidden;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		width: 100%;
+		li{
+			-webkit-box-flex: 1;
+	    -webkit-flex: 1;
+	    -ms-flex: 1;
+	    flex: 1;
+		}		
+	}
+	a{
+		display: inline-block;
+    	width: 100%;
+    	height: 49px;
+    	line-height: 20px;
+	    img{
+	    	width: 100%;
+	    	display: block;
+	    	vertical-align: middle;
+	    	height: 24px;
+	    	width: 24px;
+	    	margin: 4px auto 0;
+	    }
+	}
+	span{
+		padding-top: 4px;
+		line-height: 1;
+		font-size: 14px;
+		color: #666;
+		display: block;
+		overflow: hidden;
+	}
+}
+
+.top-fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+	max-width: 640px!important;
+	z-index: 3;
+}
+.bottom-fixed{
+	position: fixed;
+	bottom:0;
+	left: 0;
+	right: 0;
+	margin:auto;
+	max-width: 640px!important;
+}
+
+//移动端页面居中
+%mwrap{
+	box-sizing: border-box;
+	max-width:640px;
+	overflow: hidden;
+	margin:0 auto;
+}
+
+//移动端头部
+.m-head{
+	position: relative;
+	height:40px;
+	background:red;
+	.m-head-l, .m-head-r{
+		position: absolute;
+		top:6px;
+	}
+	.m-head-l{		
+		left:10px;
+	}
+	.m-head-r{
+		right:10px;
+	}
+	h2{
+		text-align: center;
+		line-height: 40px;
+		font-weight: bold;
+	}
+	a{
+		height: 35px;
+		line-height: 35px;
+	}
+}
+
+//图标文字布局
+.icon-text{
+	i{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		vertical-align: middle;
+		background-position:center center!important;
+		background-size:contain!important;
+	}
+	span{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.icon1{
+		background:url("../images/****.png") no-repeat;
+	}
+}
+
+//左图片右文字布局
+.img-text{
+	&>span:first-child{
+		width: 28%;
+		display: inline-block;
+		vertical-align: middle;	
+		text-align: center;
+		img{
+			width: 60%;
+			text-align: center;
+		}
+	}
+	&>span:last-child{
+		width: 70%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+// 垂直居中
+.vc{
+	div{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	i{
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+}

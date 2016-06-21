@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="css/mui.css"></head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<body>
+<div class="wrap">
+<article>
+    <header class="m-head">
+        <div class="m-head-l"><a href="javascript:;">返回</a></div>
+        <h2>欢迎大家</h2>
+        <div class="m-head-r"><a href="">菜单</a></div>
+    </header>
+	<section>
+		<ul class="dis-justify">
+			<li><img src="images/1.jpg" alt=""></li>
+			<li><img src="images/2.jpg" alt=""></li>
+			<li><img src="images/3.jpg" alt=""></li>
+		</ul>
+	</section>
+</article>
+</div>
+
+<footer class="b-fixed">
+    <ul class="">
+        <li><a href=""><span class="nav-icon"><img src="images/index-light.png" alt=""></span><span class="nav-label red">首页</span></a></li>
+        <li><a href=""><span class="nav-icon"><img src="images/groupbuy-grey.png" alt=""></span><span class="nav-label">团购</span></a></li>
+        <li><a href=""><span class="nav-icon"><img src="images/business-grey.png" alt=""></span><span class="nav-label">商家</span></a></li>
+        <li><a href=""><span class="nav-icon"><img src="images/me-grey.png" alt=""></span><span class="nav-label">我的</span></a></li>
+    </ul>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/mui.js"></script>
+</body>
+</html>

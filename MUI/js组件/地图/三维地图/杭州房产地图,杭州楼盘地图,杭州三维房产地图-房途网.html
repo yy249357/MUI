@@ -1,0 +1,1455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html style="height: 100%; overflow: hidden;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">   
+    <meta name="keywords" content="杭州房产地图,杭州房价地图，杭州楼盘地图">
+    <meta name="description" content="杭州房产地图最方便的三维地图找房平台,三维实景地图整合最新杭州二手房,租房,新房,楼盘房价等杭州房产信息,地图查看杭州小区楼盘周边学校,银行,医院等生活信息就上房途网!">
+    <link href="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/Site.css" rel="stylesheet" type="text/css">
+    <link type="text/css" href="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/map.css" rel="stylesheet">
+    <script charset="utf-8" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/lxb.js"></script><script charset="utf-8" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/v.js"></script><script src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/jquery.min.js" type="text/javascript"></script>
+    <script src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/jquery.include.pack-1.0.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/jquery.ui.layout.min.js"></script>
+    <script type="text/javascript" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/jquery.layout.min.js"></script>
+    <script type="text/javascript" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/convertor.js"></script>
+    
+    <!--[if lt IE 8]>
+        <script src="/Scripts/Json2.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <script src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/FT.PV.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //document.domain="fangtoo.com";
+        $(document).ready(function () {
+            window.layout = $('body').layout({
+                north__closable: true,
+                north__resizable: false,
+                north__spacing_open: 0,
+                north__spacing_closed: 0,
+                resizerDragOpacity: 1,
+                west__closable: true,
+                west__spacing_open: 0,
+                west__spacing_closed: 0,
+                west__resizable: false,
+                west__size: 310,
+                resizerTip: '拉伸调整大小',
+                sliderTip: "显示/隐藏侧边栏",
+                /*togglerContent_open: "＜",
+                togglerContent_closed: "＞",*/
+                togglerTip_open: "关闭",
+                togglerTip_closed: "打开",
+                west__onopen_end: function () {
+                    if (window.onNsToggle) window.onNsToggle(true);
+                },
+                west__onclose_start: function () {
+                    if (window.onNsToggle) window.onNsToggle(false);
+                },
+                west__onresize: function (a, b, c, d) {
+                    if (window.onWestResize) window.onWestResize(a, b, c, d);
+                },
+                center__onresize: function (a, b, c, d) {
+                    if (window.onCenterResize) window.onCenterResize(a, b, c, d);
+                }
+                /*onresize_start:function(e){
+                $("body").css("-moz-user-select","none").bind("selectstart",function(){return false;});//设置内容不能被选中
+                },
+                onresize_end:function(e){
+                $("body").css("-moz-user-select","").unbind("selectstart");//恢复内容能被选中
+                }*/
+            });
+            //-moz-user-select:none;
+            //修复选择城市被遮住问题
+            $("#topPanel").css("position", "");
+
+            //关闭按钮
+            $("#togglewest").show().click(function () {
+                if (layout.state.west.isClosed) $(this).find("div:first").text("◄");
+                else $(this).find("div:first").text("►");
+                layout.toggle('west');
+            }).find("img:first").css({ width: '28px', height: '78px' });
+        });
+    </script>
+    
+<script type="text/javascript" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/default.aspx"></script><script type="text/javascript" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/default.aspx"></script><script type="text/javascript" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/getscript"></script><style type="text/css">.BMap_mask{background:transparent url(http://api0.map.bdimg.com/images/blank.gif);}.BMap_noscreen{display:none;}.BMap_button{cursor:pointer;}.BMap_zoomer{background-image:url(http://api0.map.bdimg.com/images/mapctrls1d3.gif);background-repeat:no-repeat;overflow:hidden;font-size:1px;position:absolute;width:7px;height:7px;}.BMap_stdMpCtrl div{position:absolute;}.BMap_stdMpPan{width:44px;height:44px;overflow:hidden;background:url(http://api0.map.bdimg.com/images/mapctrls2d0.png) no-repeat;}.BMap_ie6 .BMap_stdMpPan{background:none;}.BMap_ie6 .BMap_smcbg{left:0;width:44px;height:464px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://api0.map.bdimg.com/images/mapctrls2d0.png");}.BMap_ie6 .BMap_stdMpPanBg{z-index:-1;}.BMap_stdMpPan .BMap_button{height:15px;width:15px;}.BMap_panN,.BMap_panW,.BMap_panE,.BMap_panS{overflow:hidden;}.BMap_panN{left:14px;top:0;}.BMap_panW{left:1px;top:12px;}.BMap_panE{left:27px;top:12px;}.BMap_panS{left:14px;top:25px;}.BMap_stdMpZoom{top:45px;overflow:hidden;}.BMap_stdMpZoom .BMap_button{width:22px;height:21px;left:12px;overflow:hidden;background-image:url(http://api0.map.bdimg.com/images/mapctrls2d0.png);background-repeat:no-repeat;z-index:10;}.BMap_ie6 .BMap_stdMpZoom .BMap_button{background:none;}.BMap_stdMpZoomIn{background-position:0 -221px;}.BMap_stdMpZoomOut{background-position:0 -265px;}.BMap_ie6 .BMap_stdMpZoomIn div{left:0;top:-221px;}.BMap_ie6 .BMap_stdMpZoomOut div{left:0;top:-265px;}.BMap_stdMpType4 .BMap_stdMpZoom .BMap_button{left:0;overflow:hidden;background:-webkit-gradient(linear,50% 0,50% 100%,from(rgba(255,255,255,0.85)),to(rgba(217,217,217,0.85)));z-index:10;-webkit-border-radius:22px;width:34px;height:34px;border:1px solid rgba(255,255,255,0.5);-webkit-box-shadow:0 2px 3.6px #CCC;display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;-webkit-box-sizing:border-box;}.BMap_stdMpType4 .BMap_smcbg{position:static;background:url(http://api0.map.bdimg.com/images/mapctrls2d0_mb.png) 0 0 no-repeat;-webkit-background-size:24px 32px;}.BMap_stdMpType4 .BMap_stdMpZoomIn{background-position:0 0;}.BMap_stdMpType4 .BMap_stdMpZoomIn .BMap_smcbg{width:24px;height:24px;background-position:0 0;}.BMap_stdMpType4 .BMap_stdMpZoomOut{background-position:0 0;}.BMap_stdMpType4 .BMap_stdMpZoomOut .BMap_smcbg{width:24px;height:6px;background-position:0 -25px;}.BMap_stdMpSlider{width:37px;top:18px;}.BMap_stdMpSliderBgTop{left:18px;width:10px;overflow:hidden;background:url(http://api0.map.bdimg.com/images/mapctrls2d0.png) no-repeat -23px -226px;}.BMap_stdMpSliderBgBot{left:19px;height:8px;width:10px;top:124px;overflow:hidden;background:url(http://api0.map.bdimg.com/images/mapctrls2d0.png) no-repeat -33px bottom;}.BMap_ie6 .BMap_stdMpSliderBgTop,.BMap_ie6 .BMap_stdMpSliderBgBot{background:none;}.BMap_ie6 .BMap_stdMpSliderBgTop div{left:-23px;top:-226px;}.BMap_ie6 .BMap_stdMpSliderBgBot div{left:-33px;bottom:0;}.BMap_stdMpSliderMask{height:100%;width:24px;left:10px;cursor:pointer;}.BMap_stdMpSliderBar{height:11px;width:19px;left:13px;top:80px;overflow:hidden;background:url(http://api0.map.bdimg.com/images/mapctrls2d0.png) no-repeat 0 -309px;}.BMap_stdMpSliderBar.h{background:url(http://api0.map.bdimg.com/images/mapctrls2d0.png) no-repeat 0 -320px;}.BMap_ie6 .BMap_stdMpSliderBar,.BMap_ie6 .BMap_stdMpSliderBar.h{background:none;}.BMap_ie6 .BMap_stdMpSliderBar div{top:-309px;}.BMap_ie6 .BMap_stdMpSliderBar.h div{top:-320px;}.BMap_zlSt,.BMap_zlCity,.BMap_zlProv,.BMap_zlCountry{position:absolute;left:34px;height:21px;width:28px;background-image:url(http://api0.map.bdimg.com/images/mapctrls2d0.png);background-repeat:no-repeat;font-size:0;cursor:pointer;}.BMap_ie6 .BMap_zlSt,.BMap_ie6 .BMap_zlCity,.BMap_ie6 .BMap_zlProv,.BMap_ie6 .BMap_zlCountry{background:none;overflow:hidden;}.BMap_zlHolder{display:none;position:absolute;top:0;}.BMap_zlHolder.hvr{display:block;}.BMap_zlSt{background-position:0 -380px;top:21px;}.BMap_zlCity{background-position:0 -401px;top:52px;}.BMap_zlProv{background-position:0 -422px;top:76px;}.BMap_zlCountry{background-position:0 -443px;top:100px;}.BMap_ie6 .BMap_zlSt div{top:-380px;}.BMap_ie6 .BMap_zlCity div{top:-401px;}.BMap_ie6 .BMap_zlProv div{top:-422px;}.BMap_ie6 .BMap_zlCountry div{top:-443px;}.BMap_stdMpType1 .BMap_stdMpSlider,.BMap_stdMpType2 .BMap_stdMpSlider,.BMap_stdMpType3 .BMap_stdMpSlider,.BMap_stdMpType4 .BMap_stdMpSlider,.BMap_stdMpType2 .BMap_stdMpZoom,.BMap_stdMpType3 .BMap_stdMpPan,.BMap_stdMpType4 .BMap_stdMpPan{display:none;}.BMap_stdMpType3 .BMap_stdMpZoom{top:0;}.BMap_stdMpType4 .BMap_stdMpZoom{top:0;}.BMap_cpyCtrl a{font-size:11px;color:#7979CC;}.BMap_scaleCtrl{height:23px;overflow:hidden;}.BMap_scaleCtrl div.BMap_scaleTxt{font-size:11px;font-family:Arial,sans-serif;}.BMap_scaleCtrl div{position:absolute;overflow:hidden;}.BMap_scaleHBar img,.BMap_scaleLBar img,.BMap_scaleRBar img{position:absolute;width:37px;height:442px;left:0;}.BMap_scaleHBar{width:100%;height:5px;font-size:0;bottom:0;}.BMap_scaleHBar img{top:-437px;width:100%;}.BMap_scaleLBar,.BMap_scaleRBar{width:3px;height:9px;bottom:0;font-size:0;z-index:1;}.BMap_scaleLBar img{top:-427px;left:0;}.BMap_scaleRBar img{top:-427px;left:-5px;}.BMap_scaleLBar{left:0;}.BMap_scaleRBar{right:0;}.BMap_scaleTxt{text-align:center;width:100%;cursor:default;line-height:18px;}.BMap_omCtrl{background-color:#fff;overflow:hidden;}.BMap_omOutFrame{position:absolute;width:100%;height:100%;left:0;top:0;}.BMap_omInnFrame{position:absolute;border:1px solid #999;background-color:#ccc;overflow:hidden;}.BMap_omMapContainer{position:absolute;overflow:hidden;width:100%;height:100%;left:0;top:0;}.BMap_omViewMv{border-width:1px;border-style:solid;border-left-color:#84b0df;border-top-color:#adcff4;border-right-color:#274b8b;border-bottom-color:#274b8b;position:absolute;z-index:600;}.BMap_omViewInnFrame{border:1px solid #3e6bb8;}.BMap_omViewMask{width:1000px;height:1000px;position:absolute;left:0;top:0;background-color:#68c;opacity:.2;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);}.BMap_omBtn{height:13px;width:13px;position:absolute;cursor:pointer;overflow:hidden;background:url(http://api0.map.bdimg.com/images/mapctrls1d3.gif) no-repeat;z-index:1210;}.anchorBR .BMap_omOutFrame{border-top:1px solid #999;border-left:1px solid #999;}.quad4 .BMap_omBtn{background-position:-26px -27px;}.quad4 .BMap_omBtn.hover{background-position:0 -27px;}.quad4 .BMap_omBtn.BMap_omBtnClosed{background-position:-39px -27px;}.quad4 .BMap_omBtn.BMap_omBtnClosed.hover{background-position:-13px -27px;}.anchorTR .BMap_omOutFrame{border-bottom:1px solid #999;border-left:1px solid #999;}.quad1 .BMap_omBtn{background-position:-39px -41px;}.quad1 .BMap_omBtn.hover{background-position:-13px -41px;}.quad1 .BMap_omBtn.BMap_omBtnClosed{background-position:-26px -41px;}.quad1 .BMap_omBtn.BMap_omBtnClosed.hover{background-position:0 -41px;}.anchorBL .BMap_omOutFrame{border-top:1px solid #999;border-right:1px solid #999;}.quad3 .BMap_omBtn{background-position:-27px -40px;}.quad3 .BMap_omBtn.hover{background-position:-1px -40px;}.quad3 .BMap_omBtn.BMap_omBtnClosed{background-position:-40px -40px;}.quad3 .BMap_omBtn.BMap_omBtnClosed.hover{background-position:-14px -40px;}.anchorTL .BMap_omOutFrame{border-bottom:1px solid #999;border-right:1px solid #999;}.quad2 .BMap_omBtn{background-position:-40px -28px;}.quad2 .BMap_omBtn.hover{background-position:-14px -28px;}.quad2 .BMap_omBtn.BMap_omBtnClosed{background-position:-27px -28px;}.quad2 .BMap_omBtn.BMap_omBtnClosed.hover{background-position:-1px -28px;}.anchorR .BMap_omOutFrame{border-bottom:1px solid #999;border-left:1px solid #999;border-top:1px solid #999;}.anchorL .BMap_omOutFrame{border-bottom:1px solid #999;border-right:1px solid #999;border-top:1px solid #999;}.anchorB .BMap_omOutFrame{border-top:1px solid #999;border-left:1px solid #999;border-right:1px solid #999;}.anchorT .BMap_omOutFrame{border-bottom:1px solid #999;border-right:1px solid #999;border-left:1px solid #999;}.anchorNon .BMap_omOutFrame,.withOffset .BMap_omOutFrame{border:1px solid #999;}.BMap_zoomMask0,.BMap_zoomMask1{position:absolute;left:0;top:0;width:100%;height:100%;background:transparent url(http://api0.map.bdimg.com/images/blank.gif);z-index:1000;}.BMap_contextMenu{position:absolute;border-top:1px solid #adbfe4;border-left:1px solid #adbfe4;border-right:1px solid #8ba4d8;border-bottom:1px solid #8ba4d8;padding:0;margin:0;width:auto;visibility:hidden;background:#fff;z-index:10000000;}.BMap_cmShadow{position:absolute;background:#000;opacity:.3;filter:alpha(opacity=30);visibility:hidden;z-index:9000000;}div.BMap_cmDivider{border-bottom:1px solid #adbfe4;font-size:0;padding:1px;margin:0 6px;}div.BMap_cmFstItem{margin-top:2px;}div.BMap_cmLstItem{margin-bottom:2px;}.BMap_shadow img{border:0 none;margin:0;padding:0;height:370px;width:1144px;}.BMap_pop .BMap_top{border-top:1px solid #ababab;background-color:#fff;}.BMap_pop .BMap_center{border-left:1px solid #ababab;border-right:1px solid #ababab;background-color:#fff;}.BMap_pop .BMap_bottom{border-bottom:1px solid #ababab;background-color:#fff;}.BMap_shadow,.BMap_shadow img,.BMap_shadow div{-moz-user-select:none;-webkit-user-select:none;}.BMap_checkbox{background:url(http://api0.map.bdimg.com/images/mapctrls1d3.gif);vertical-align:middle;display:inline-block;width:11px;height:11px;margin-right:4px;background-position:-14px 90px;}.BMap_checkbox.checked{background-position:-2px 90px;}.BMap_pop .BMap_top img,.BMap_pop .BMap_center img,.BMap_pop .BMap_bottom img{display:none;}@media print{.BMap_noprint{display:none;}.BMap_noscreen{display:block;}.BMap_mask{background:none;}.BMap_pop .BMap_top img,.BMap_pop .BMap_center img,.BMap_pop .BMap_bottom img{display:block;}}.BMap_vectex{cursor:pointer;width:11px;height:11px;position:absolute;background-repeat:no-repeat;background-position:0 0;}.BMap_vectex_nodeT{background-image:url(http://api0.map.bdimg.com/images/nodeT.gif);}.BMap_vectex_node{background-image:url(http://api0.map.bdimg.com/images/node.gif);}.iw{width:100%;-webkit-box-sizing:border-box;border:.3em solid transparent;-webkit-background-clip:padding;}.iw_rt{position:relative;height:46px;width:195px;-webkit-box-sizing:border-box;display:-webkit-box;-webkit-box-align:center;margin:2px 5px 0 2px;background-color:rgba(0,0,0,0.8);-webkit-box-shadow:2px 2px 7px rgba(0,0,0,0.3);-webkit-border-radius:2px;color:#fff;}.iw_rt:after{content:"";position:absolute;left:50%;bottom:-8px;width:0;height:0;border-left:5px solid transparent;border-top:8px solid rgba(0,0,0,0.8);border-right:5px solid transparent;margin:0 0 0 -6px;}.iw_s{text-align:center;vertical-align:middle;height:100%;-webkit-box-sizing:border-box;}.iw_rt .iw_s1{color:#cbcbcb;}.iw_rt b{color:#fff;font-weight:bold;}.iw_rt_gr{margin-left:-4px;}.iw_busline{margin:32px 0 0 -3px;}.iw_busline .iw_cc{text-align:center;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;padding:0 6px;}.iw_r{-webkit-box-ordinal-group:3;}.iw_r,.iw_l{height:100%;font-size:4.5em;text-align:center;color:#747474;border:none;-webkit-box-sizing:border-box;-webkit-border-radius:0;line-height:.7em;border:1px solid rgba(255,255,255,0.2);width:41px;}.iw_r{border-style:none none none solid;}.iw_l{border-style:none solid none none;}.iw_search,.iw_l{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAlCAYAAAAuqZsAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEz NDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNl SUQ9InhtcC5paWQ6QjA3NjMyREJDNzQ2MTFFMTlBQUM5QzlCRDZGODZCQkYiIHhtcE1NOkRvY3Vt ZW50SUQ9InhtcC5kaWQ6QjA3NjMyRENDNzQ2MTFFMTlBQUM5QzlCRDZGODZCQkYiPiA8eG1wTU06 RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCMDc2MzJEOUM3NDYxMUUxOUFB QzlDOUJENkY4NkJCRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCMDc2MzJEQUM3NDYxMUUx OUFBQzlDOUJENkY4NkJCRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w bWV0YT4gPD94cGFja2V0IGVuZD0iciI/PllB9T8AAAKuSURBVHjaxFjRcdpAEAX+mVEqiFxB5AoQ HZAKElcArsBWBSgVQCoAVwCuwEoFlivwGQpI7jKrzGXn7ep0EsPO7BjLp/O73bdv9xifTqdRpCXW c+sz65n1lNy3mvzZemX9aN34C6bTKdx8HAHMgVlaX0QeaGv9J4EcBJgD9EA/hzAH7N4Cq/oAW1tf KX+vKEXP7PlMSLFvhQX32BWY49GBOIRO7FKy57wBlnoUQHu5yJX+g4mymdvgFWzkAM3JtwGgmiJw a2/pvQoEYBQCLKNI8RfuaeNjT245gAUdqgHdmkqUPiOctLdJVYkithkAVO/K5cC+M30KAZVSxboo /ybnn1eIR5r5qUyI7P4GX6nqJHskbQsxQ7wqu6aSn2qrgHLrXjqAat5ZC0WlRuzVE0J3uhtBCjRt a3qjX92JIMiOIqYtYgumzpo+7RRtu/E0zvknokMF5GgdQv4Ze/5DWL8CFVe2aNuedGsLCi1vS+WL F4WKNkL2Dnh414FnO1b1R5vKuRaxjKUF2YKBqjuCGtF6nyL5+XxOJWCcL2/CpjzdRYRuGpDShQQs ARUj9U/OnRh7Yr9/CW1JXU4fYxXoHIMCu+iB+gBLIt/LgShDYCYktGCDfCBgvyRgVQgZwTy/jIzy EnQNMZV1QCT4bJ+3XFCkS81/WijdkiYAdSak04BWtabWEmIbsNZYgU00YE+gjyErQeo31GpShVMH Yc+/dwsEzh97/D6ojT2ZMlM1XwN8WP9Ma7NAbZvbtBoEjE+jBT2TusCu5SIbI7z/wLWN1rdKi0o6 cqwTuAmYyTm5NQW/82atWvlnBbo7apxD98qDJxl7mkC76JQ2Qm0CI1xKF95Gb4oLXHJDwJlxjy/u LgruGtNFM8lqnNtfK2JqN3CVeW1gzWj9jThd0xd59R8BBgAAiefGO1Bt1gAAAABJRU5ErkJggg==") no-repeat 50% 50%;-webkit-background-size:19px 19px;}.iw_line_s,.iw_r{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAmCAYAAABDClKtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEz NDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNl SUQ9InhtcC5paWQ6QjA3NjMyREZDNzQ2MTFFMTlBQUM5QzlCRDZGODZCQkYiIHhtcE1NOkRvY3Vt ZW50SUQ9InhtcC5kaWQ6QjA3NjMyRTBDNzQ2MTFFMTlBQUM5QzlCRDZGODZCQkYiPiA8eG1wTU06 RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCMDc2MzJEREM3NDYxMUUxOUFB QzlDOUJENkY4NkJCRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCMDc2MzJERUM3NDYxMUUx OUFBQzlDOUJENkY4NkJCRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w bWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqheQ+MAAAEtSURBVHja7JftDYIwEIbB8JeEUXACZQPd oGygE+gGxAnQEZzAOgEdwREIDKBXUgjBIqW5Npj0kvcHpG0erveFX1WVZ8l2oBhEhRoLw/BroW8J KgeR3vMVlI5BrSwAHQZAnngmYxtMe4oIL41ZAp6iNqF4/BQTa0oBxmxAcaAHKFJY+wKtAaw0CRUJ oHjGHiY8VpqCKmYCdRkJUKmJ7Ms1gZqkqOs6w/bUGXRCOGePCcXjaItwDsW8PoZ0zhM70IeeyiZi jH/Isf+CF9MAOdCppDj+LJ6yim6j9802B6VqQa818BFjY6AHakHp9Crj15ctCaiFIi7Q/wCKLRHq vjSoVNKWunH4rTBDv5Cv7NKeKfvvU2nINzHAuexzUA7KQTkoB6UxDicKvc+qfQQYABaiUBxugCsr AAAAAElFTkSuQmCC") no-repeat 50% 50%;-webkit-background-size:19px 19px;}.iw_line{height:64px;width:228px;padding:0 11px;line-height:20px;}.iw_bustrans .iw_cc{text-align:center;}.iw_c{color:#FFFFFF;text-decoration:none;overflow:hidden;display:-webkit-box;-webkit-box-align:center;-webkit-box-flex:1;}.iw_cc{-webkit-box-sizing:border-box;width:100%;border:none;}.gray_background{filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity:0.5;opacity: 0.5} .light_gray_background {filter:alpha(opacity=70);-moz-opacity:0.7;-khtml-opacity:0.7;opacity: 0.7} .panoInfoBox {cursor: pointer; } .panoInfoBox {position: relative; width: 323px; height: 101px; margin-bottom: 4px; cursor: pointer; } .panoInfoBox .panoInfoBoxTitleBg {width: 323px; height: 19px; position: absolute; left: 0; bottom: 0; z-index: 2; background-color: #000; opacity: .7; } .panoInfoBox .panoInfoBoxTitleContent {font-size: 12px; color: #fff; position: absolute; bottom: 2px; left: 5px; z-index: 3; text-decoration: none; } .RouteAddressOuterBkg{position:relative; padding: 32px 4px 4px 3px; background-color:#ffdd99; } .RouteAddressInnerBkg{padding: 3px 5px 8px 8px; background-color:#ffffff; } #RouteAddress_DIV1{margin-top: 5px; } .RouteAddressTip{position:absolute; width:100%; top:0px; text-align:center; height:30px; line-height:30px; color:#994c00; } .route_tip_con {position:absolute;top:145px;} .route_tip_con .route_tip{position:absolute;width:233px;height:29px;color:#803300;text-align:center;line-height:29px;border:#cc967a solid 1px;background:#fff2b2;z-index:100000;} .route_tip_con .route_tip span{position:absolute;top:0;right:0;_right:-1px;width:14px;height:13px;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat 0 -121px;cursor:pointer;} .route_tip_con .route_tip_shadow{width:233px;height:29px;  position:absolute;left:1px;top:1px;background:#505050;border:1px solid #505050;opacity:0.2;filter:alpha(opacity=20)} .sel_body_body_page{margin:5px 0} .sel_n{margin-top:5px;overflow:hidden;} .sel_n .sel_top{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -418px;height:4px;font-size:0px;} .sel_n .sel_body_top{height:32px;width:100%;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat 0 -41px;} .sel_n .sel_body_title{float:left;width:100%;height:31px;} .sel_n .sel_body_sign{margin-top:1px;width:30px;height:31px;float:left;background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat -79px -387px;} .sel_n .sel_body_name{height: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin:0 20px 0 30px;padding:8px 7px 7px;font-size:14px;color:#FA8722;} .sel_n .sel_body_button{float:left;width:55px;margin-left:-55px;padding-top:8px;} .sel_n .sel_body_button a{} .sel_n .sel_bottom{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -415px;height:4px;font-size:0px;} .sel_n .sel_body_body{padding:3px 0 0 0} .sel_n1{margin-top:5px;width:329px;overflow:hidden;} .sel_n1 .sel_top{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -418px;height:4px;font-size:0px;} .sel_n1 .sel_body_top{height:31px;width:100%;background:url(http://api0.map.bdimg.com/images/sel_body_n_top.gif) repeat-x;} .sel_n1 .sel_body_top{height:32px;width:100%;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat 0 -41px} .sel_n1 .sel_body_title{float:left;width:100%;height:31px;cursor:pointer;} .sel_n1 .sel_body_sign{margin-top:1px;width:30px;height:31px;float:left;background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat -79px -387px;} .sel_n1 .sel_body_name{margin:0 20px 0 30px;padding:8px 7px 7px;font-size:14px;color:#FA8722;} .sel_n1 .sel_body_button{float:left;width:20px;height:31px;margin-left:-23px;background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat -253px -382px;overflow:hidden;zoom:1;cursor:pointer;} .sel_n1 .sel_body_button a{display:none;} .sel_n1 .sel_body_body{display:none} .sel_n1 .sel_bottom{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -415px;height:4px;font-size:0px;} .sel_y{margin-top:5px;overflow:hidden;} .sel_y .sel_top{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -439px;height:4px;zoom:1;font-size:0px;} .sel_y .sel_body_top{height:32px;width:100%;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat 0 0} .sel_y .sel_body_title{float:left;width:100%;height:31px;cursor:pointer;} .sel_y .sel_body_sign{margin-top:1px;width:30px;height:31px;float:left;background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat -167px -384px;} .sel_y .sel_body_name{margin:0 20px 0 30px;padding:8px 7px 7px;font-size:14px;color:#5B7BCB;} .sel_y .sel_body_button{float:left;width:20px;height:31px;margin-left:-20px;background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat -269px -297px;cursor:pointer;} .sel_y .sel_body_button a{display:none;} .sel_y .sel_body_body{display:none;height:0px} .sel_y .sel_body_body_div{} .sel_y .sel_bottom{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -436px;height:4px;font-size:0px;} .sel_y .sel_body_body_page{display:none;height:0px;} .sel_x{margin-top:5px;width:329px;overflow:hidden;} .sel_x .sel_top{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -418px;height:4px;font-size:0px;} .sel_x .sel_body_top{height:32px;width:100%;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat 0 -41px;} .sel_x .sel_body_title{float:left;width:100%;height:31px;} .sel_x .sel_body_sign{margin-top:1px;width:30px;height:31px;float:left;background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat -122px -384px;} .sel_x .sel_body_name{margin:0 20px 0 30px;padding:8px 7px 7px;font-size:14px;color:#FA8722;} .sel_x .sel_body_button{float:left;width:55px;margin-left:-55px;padding-top:8px;} .sel_x .sel_body_button a{} .sel_x .sel_body_body{} .sel_x .sel_body_body_div{padding:5px 5px 0 5px;} .sel_x .sel_bottom{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -415px;height:4px;font-size:0px;} .sel_x1{margin-top:5px;width:329px;overflow:hidden;} .sel_x1 .sel_top{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -418px;height:4px;font-size:0px;} .sel_x1 .sel_body_top{height:32px;width:100%;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat 0 -41px} .sel_x1 .sel_body_title{float:left;width:100%;height:31px;cursor:pointer;} .sel_x1 .sel_body_sign{margin-top:1px;width:30px;height:31px;float:left;background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat -122px -384px;} .sel_x1 .sel_body_name{margin:0 20px 0 30px;padding:8px 7px 7px;font-size:14px;color:#FA8722;} .sel_x1 .sel_body_button{float:left;width:55px;height:31px;margin-left:-55px;} .sel_x1 .sel_body_button a{display:none;} .sel_x1 .sel_body_body{display:none;height:0px;} .sel_x1 .sel_body_body_div{padding:5px 5px 0 5px;} .sel_x1 .sel_bottom{background:url(http://api0.map.bdimg.com/images/bgs.gif) no-repeat 0 -415px;height:4px;font-size:0px;} .sel_body_citylist{height:100px;padding: 0 0 0 5px} .sel_body_resitem{table-layout:fixed;overflow-x:hidden;overflow-y:hidden;} .sel_body_resitem table {margin-right:5px;} .sel_body_resitem tr{cursor:pointer;} .sel_body_resitem th{padding-top:5px;padding-left:5px;text-align:left;vertical-align:top;width:22px;} .sel_body_resitem th div.iconbg{background:url(http://api0.map.bdimg.com/images/markers_new_ie6.png) no-repeat scroll 0 0;height:29px;width:24px;} .sel_body_resitem th div.icon{cursor:pointer} .sel_body_resitem th div#no_0_1, .sel_body_resitem th div#no_1_1{background-position:0 -64px} .sel_body_resitem th div#no_0_2, .sel_body_resitem th div#no_1_2{background-position:-24px -64px} .sel_body_resitem th div#no_0_3, .sel_body_resitem th div#no_1_3{background-position:-48px -64px} .sel_body_resitem th div#no_0_4, .sel_body_resitem th div#no_1_4{background-position:-72px -64px} .sel_body_resitem th div#no_0_5, .sel_body_resitem th div#no_1_5{background-position:-96px -64px} .sel_body_resitem th div#no_0_6, .sel_body_resitem th div#no_1_6{background-position:-120px -64px} .sel_body_resitem th div#no_0_7, .sel_body_resitem th div#no_1_7{background-position:-144px -64px} .sel_body_resitem th div#no_0_8, .sel_body_resitem th div#no_1_8{background-position:-168px -64px} .sel_body_resitem th div#no_0_9, .sel_body_resitem th div#no_1_9{background-position:-192px -64px} .sel_body_resitem th div#no_0_10, .sel_body_resitem th div#no_1_10{background-position:-216px -64px} .sel_body_resitem td{line-height:160%;padding:3px 0 3px 3px;vertical-align:top;} .sel_body_resitem div.ra_td_title{float:left;margin-right:40px;} .sel_body_resitem div.ra_td_button{float:right; width:40px;} .sel_body_resitem div.ra_td_button input{height:18px;font-size:12px;width:40px;} .sel_body_resitem div.clear{clear:both;height:0px;width:100%;} .sel_body_resitem td .selBtn {width:70px;height:29px;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat -21px -81px;text-align:center;line-height:29px;visibility:hidden;color:#b35900;display:inline-block;*display:inline;*zoom:1;} .sel_body_resitem td .list_street_view_poi {display:inline-block;float:none;margin-right:6px;position:static;*vertical-align:-3px;_vertical-align:-5px;*display:inline;*zoom:1;} .selInfoWndBtn {width:70px;height:29px;background:url(http://api0.map.bdimg.com/images/addrPage.png?v=20121107) no-repeat -21px -81px;text-align:center;line-height:29px;margin: 0 auto;cursor:pointer;color:#b35900} .sel_body_body td a{text-decoration: none; cursor: auto; } .sel_body_body td a:hover,.sel_body_body td a:focus{text-decoration:underline; }.panoInfoBox{cursor:pointer}.panoInfoBox{position:relative;width:323px;height:101px;margin-bottom:4px;cursor:pointer}.panoInfoBox .panoInfoBoxTitleBg{width:323px;height:19px;position:absolute;left:0;bottom:0;z-index:2;background-color:#000;opacity:.7}.panoInfoBox .panoInfoBoxTitleContent{font-size:12px;color:#fff;position:absolute;bottom:2px;left:5px;z-index:3;text-decoration:none}.pano_switch_left,.pano_switch_right{position:absolute;width:28px;height:38px;cursor:pointer;background-color:#252525;background-color:rgba(37,37,37,.9)}.pano_switch_left{background:url(http://api0.map.bdimg.com/images/panorama/zuojiantou.png) no-repeat;-webkit-background-size:100% 100%;background-size:100% 100%}.pano_switch_right{background:url(http://api0.map.bdimg.com/images/panorama/youjiantou.png) no-repeat;-webkit-background-size:100% 100%;background-size:100% 100%}.pano_switch_left:hover{background:url(http://api0.map.bdimg.com/images/panorama/zuojiantou_hover.png) no-repeat;-webkit-background-size:100% 100%;background-size:100% 100%}.pano_switch_right:hover{background:url(http://api0.map.bdimg.com/images/panorama/youjiantou_hover.png) no-repeat;-webkit-background-size:100% 100%;background-size:100% 100%}.pano_switch_left.pano_switch_disable,.pano_switch_right.pano_switch_disable{background:0 0;border:none}.pano_poi_1,.pano_poi_2,.pano_poi_4{display:inline-block;width:16px;height:16px;vertical-align:middle;background:url(http://webmap0.map.bdimg.com/newmap/static/common/images/pano_whole/guide_icons_4b871b2.png) no-repeat;background-position:0 0}.pano_photo_arrow_l,.pano_photo_arrow_r{position:absolute;top:0;width:20px;height:100%;background:#f3eeee}.pano_photo_arrow_l{left:0}.pano_photo_arrow_r{right:0}.pano_arrow_l,.pano_arrow_r{display:inline-block;width:18px;height:18px;background:url(http://webmap0.map.bdimg.com/newmap/static/common/images/pano_whole/pano-icons_223a291.png) no-repeat}.pano_catlogLi{cursor:pointer;position:relative;line-height:10px;font-size:10px;text-align:center;color:#abb0b2;border:1px solid #53565c;padding:3px 0;margin-top:3px;margin-left:2px;width:90%}.pano_catlogLi:hover{color:#3DAAFC;border:1px solid #3DAAFC}.pano_catlogLiActive{color:#3DAAFC;border:1px solid #3DAAFC}.pano_arrow_l{background-position:0 -36px}.pano_arrow_r{background-position:-54px -36px}.pano_photo_arrow_l:hover .pano_arrow_l{background-position:-18px -36px}.pano_photo_arrow_r:hover .pano_arrow_r{background-position:-72px -36px}.pano_photo_arrow_l.pano_arrow_disable .pano_arrow_l{background-position:-36px -36px}.pano_photo_arrow_r.pano_arrow_disable .pano_arrow_r{background-position:-90px -36px}.pano_photo_item{position:relative;float:left;line-height:0;padding-left:8px}.pano_photo_decs{position:absolute;bottom:1px;left:0;padding:2px 0;text-indent:5px;margin-left:8px;display:inline-block;color:#fff;background:#000;opacity:.5;filter:alpha(opacity=50)9;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.pano_photo_item img{display:inline-block;border:solid 1px #252525}.pano_photo_item:hover img{border-color:#005efc}.pano_photo_item_seleted{position:absolute;top:0;left:-100000px;border:3px solid #097df3}.pano_close{position:absolute;right:10px;top:10px;width:40px;cursor:pointer;height:40px;line-height:40px;border-radius:3px;background-color:rgba(37,37,37,.9);background-image:url(http://api0.map.bdimg.com/images/panorama/close.png);background-repeat:no-repeat;background-position:center center;background-size:90%}.pano_close:hover{background-image:url(http://api0.map.bdimg.com/images/panorama/close_hover.png)}.pano_pc_indoor_exit{position:absolute;right:60px;top:10px;width:89px;cursor:pointer;height:40px;line-height:40px;color:#ebedf0;border-radius:3px;background-color:#252525;background-color:rgba(37,37,37,.9);background-image:url(http://api0.map.bdimg.com/images/panorama/indoor_exit.png);background-repeat:no-repeat;background-position:15px 12px}.pano_pc_indoor_exit:hover{background-image:url(http://api0.map.bdimg.com/images/panorama/indoor_exit_hover.png);color:#2495ff}.pano_m_indoor_exit{font-size:16px;position:absolute;right:30px;top:10px;width:89px;cursor:pointer;height:40px;line-height:40px;color:#ebedf0;border-radius:3px;background-color:#252525;background-color:rgba(37,37,37,.9);background-image:url(http://api0.map.bdimg.com/images/panorama/indoor_exit.png);background-repeat:no-repeat;background-position:15px 12px}.navtrans-table tr{color:#666}.navtrans-table tr:hover{color:#333}.navtrans-navlist-icon{float:left;width:18px;height:16px;background:url(http://webmap0.map.bdimg.com/wolfman/static/common/images/nav-icon_b5c3223.png) no-repeat 0px 0px;_background:url(http://webmap0.map.bdimg.com/wolfman/static/common/images/nav-icon_ie6_134841b.png) no-repeat 0px 0px;margin-top:2px;margin-right:5px}.navtrans-navlist-icon.s-1{background-position:0px 0px}.navtrans-navlist-icon.s-2{background-position:-18px 0px}.navtrans-navlist-icon.s-3{background-position:-36px 0px}.navtrans-navlist-icon.s-4{background-position:-54px 0px}.navtrans-navlist-icon.s-5{background-position:-72px 0px}.navtrans-navlist-icon.s-6{background-position:-90px 0px}.navtrans-navlist-icon.s-7{background-position:0px -16px}.navtrans-navlist-icon.s-8{background-position:-18px -16px}.navtrans-navlist-icon.s-9{background-position:-36px -16px}.navtrans-navlist-icon.s-10{background-position:-54px -16px}.navtrans-navlist-icon.s-11{background-position:-72px -16px}.navtrans-navlist-icon.s-12{background-position:-90px -16px}.navtrans-navlist-icon.s-13{background-position:0px -32px}.navtrans-navlist-icon.s-14{background-position:-18px -32px}.navtrans-navlist-icon.s-18{background-position:-36px -32px}.navtrans-navlist-icon.s-19{background-position:-54px -32px}.navtrans-navlist-icon.s-20{background-position:-72px -32px}.navtrans-navlist-icon.s-21{background-position:-90px -32px}.navtrans-navlist-icon.nav-st,.navtrans-navlist-icon.nav-through{background-position:-16px -70px}.navtrans-navlist-icon.nav-ed{background-position:0px -70px}.navtrans-view{border-top:1px solid #e4e6e7;border-left:1px solid #e4e6e7;border-right:1px solid #e4e6e7}.navtrans-view:hover{cursor:pointer}.navtrans-view .navtrans-arrow{position:absolute;top:8px;right:5px;width:7px;height:4px;background-image:url(http://webmap0.map.bdimg.com/wolfman/static/common/images/nav-icon_b5c3223.png);background-repeat:no-repeat;background-position:-40px -70px;margin-top:3px;margin-right:3px;_background-image:url(http://webmap0.map.bdimg.com/wolfman/static/common/images/nav-icon_ie6_134841b.png)}.navtrans-view.expand:hover .navtrans-arrow{background-position:-61px -70px}.navtrans-view.expand .navtrans-arrow{background-position:-54px -70px}.navtrans-view:hover .navtrans-arrow{background-position:-47px -70px}.navtrans-navlist-content{overflow:hidden}.navtrans-res{border-bottom:1px solid #E4E6E7;border-left:1px solid #E4E6E7;border-right:1px solid #E4E6E7}.navtrans-bus-icon{display:inline-block;float:left;background-image:url(http://webmap0.map.bdimg.com/wolfman/static/common/images/ui3/mo_banner_e1aa2e6.png);background-repeat:no-repeat}.navtrans-bus-icon.bus{width:13px;height:16px;background-position:-1px -192px;position:relative;top:4px}.navtrans-bus-icon.walk{width:16px;height:18px;background-position:-63px -189px;position:relative;top:2px;left:-2px}.navtrans-bus-desc{line-height:24px;margin-left:20px}.navtrans-busstation{color:#36c;font-weight:600}.tranroute-plan-list.expand .trans-title{border-bottom:1px solid #e4e6e7;background-color:#ebf1fb}.trans-plan-content tr td:hover .bus{background-position:-15px -192px}.trans-plan-content tr td:hover .walk{background-position:-82px -189px}.suggest-plan{position:absolute;background-color:#0C88E8;padding:0px 15px;line-height:20px;color:#fff;left:0px;top:0px}.suggest-plan-des{text-align:left;padding:29px 0px 0px 25px;font-size:13px;color:#000}.bmap-clearfix{*+height:1%}.bmap-clearfix:after{content:".";display:block;height:0px;clear:both;visibility:hidden}.BMap_CityListCtrl{font-size:12px}.BMap_CityListCtrl a{text-decoration:none!important}.BMap_CityListCtrl a:hover{text-decoration:underline!important}.BMap_CityListCtrl .citylist_popup_main{border:1px solid #cdcdcd;z-index:2;position:relative;width:100%;height:100%;background:#fafafa;overflow:hidden;box-shadow:1px 1px 1px rgba(0,0,0,.1)}.ui_city_change_top .ui_city_change_inner,.ui_city_change_bottom .ui_city_change_inner{display:inline-block;height:24px;line-height:24px;border:1px solid #c4c7cc;background-color:#fff;padding:0 10px 0 10px;color:#000}.ui_city_change_top .ui_city_change_inner i,.ui_city_change_bottom .ui_city_change_inner i{width:8px;height:6px;display:inline-block;position:relative;top:9px;left:5px;-webkit-transition:all ease-in-out .15s;transition:all ease-in-out .15s;display:none9}.ui_city_change_click .ui_city_change_inner i,.ui_city_change_click_close .ui_city_change_inner i{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}.ui_city_change_top .ui_city_change_inner:hover em{border-top-color:#0C88E8}.ui_city_change_top .ui_city_change_inner em{width:0;height:0;border-color:rgba(255,255,255,0);border-top-color:#D0D4DA;border-style:solid;border-width:4px}.ui_city_change_top .ui_city_change_inner:hover,.ui_city_change_bottom .ui_city_change_inner:hover{text-decoration:none!important;color:#3d6dcc}.ui_city_change_bottom .ui_city_change_inner:hover em{border-bottom-color:#0C88E8}.ui_city_change_bottom .ui_city_change_inner em{width:0;height:0;border-color:rgba(255,255,255,0);border-bottom-color:#D0D4DA;border-style:solid;border-width:4px;position:relative;top:-18px}.citylist_popup_main .citylist_ctr_title{background:#f9f9f9;border-bottom:1px solid #dadada;height:25px;line-height:25px;font-size:12px;color:#4c4c4c;padding-left:7px}.citylist_popup_main .city_content_top{position:relative;height:30px;padding:15px 10px 0px 10px;border-bottom:1px solid #CCC;margin:0px 10px}.citylist_popup_main .city_content_top .cur_city_info{display:inline-block;margin:0;padding:0;}#city_ctrl_form{position:absolute;right:12px;top:10px}#selCityWd{border:1px solid #ccc;height:20px;width:121px;line-height:20px;text-indent:4px;outline:none}#selCitySubmit:hover{background-position:-355px -98px}#selCitySubmit{float:right;background:url(http://webmap0.map.bdimg.com/wolfman/static/common/images/index_a2f1ac4.png) no-repeat scroll -302px -98px;height:24px;line-height:24px;width:48px;cursor:pointer;margin-left:5px;text-align:center}#sel_city_letter_list{padding-top:10px}#sel_city_letter_list a{white-space:nowrap;margin-right:11px;line-height:18px;font-size:13px;font-family:Arial,Helvetica,SimSun,sans-serif}.city_content_medium{padding:10px 10px 10px 10px;border-bottom:1px solid #CCC;margin:0px 10px}.city_content_bottom{padding:10px 10px 10px 8px;margin:9px 5px 5px 5px;height:218px;overflow-y:auto}#city_detail_table tr td{vertical-align:top}.sel_city_hotcity a{color:#3d6dcc}.sel_city_letter{padding:0 14px 0 3px}.sel_city_letter div{font-size:24px;line-height:24px;font-weight:700;color:#ccc;padding:0;margin:0;font-family:Arial,Helvetica,SimSun,sans-serif}.sel_city_sf{padding-right:8px;font-weight:700}.sel_city_sf a{white-space:nowrap;line-height:18px;color:#3d6dcc}.city_names_wrap{margin-bottom:9px}.sel_city_name{color:#3d6dcc;white-space:nowrap;margin-right:9px;line-height:18px;float:left}#popup_close{outline:none;position:absolute;z-index:50;top:7px;right:6px;width:12px;height:12px;background:url(http://webmap0.map.bdimg.com/wolfman/static/common/images/popup_close_15d2283.gif) no-repeat;border:0;cursor:pointer}</style></head>
+<body style="padding: 0px; margin: 0px; overflow: hidden; position: relative; height: 100%; border: none;" scroll="no">
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".logo #openCity").mouseenter(function () {
+                    var _cityDiv = $(".div_openCityList", $(this));
+                    _cityDiv.stop(true, true).show('fast');
+                    if (_cityDiv.html().length > 0) return;
+
+                    _cityDiv.html("正在加载...");
+                    $.post('/base/_PageOpenCity', function (obj) {
+                        _cityDiv.empty();
+                        if (obj && obj.data) {
+                            var strCities = "<ul>";
+                            for (var i = 0; i < obj.data.length; i++) {
+                                strCities += "<li title='" + obj.data[i].CityName + "站'><a href='http://" + obj.data[i].Domain + ".fangtoo.com'>" + obj.data[i].CityName + "</a></li>";
+                            }
+                            _cityDiv.html(strCities + "</ul>");
+                        }
+                    }, 'json');
+                }).mouseleave(function () {
+                    $(".div_openCityList", $(this)).hide('fast');
+                });
+            });
+        </script>
+    </div>
+    <div class="menu">
+    <div class="sys_menu">
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".parentMenu").mouseenter(function () {
+                    $("#div_childMenu").empty().append($("ul:first", $(this))[0].outerHTML).css({ "left": $(this).offset().left, top: $(this)[0].offsetHeight }).show();
+                }).mouseleave(function (e) {
+                    if (e.relatedTarget==null||!(e.relatedTarget.id == "div_childMenu" || $(e.relatedTarget).parents("#div_childMenu").length > 0)) {
+                        $("#div_childMenu").hide().empty();
+                    }
+                }).click(function () {
+                    $("#div_childMenu").hide().empty();
+                });
+
+                $("#div_childMenu").mouseleave(function (e) {
+                    $(this).hide().empty();
+                });
+            });
+        </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //周边
+        $(".dropdownlist").mouseenter(function () {
+            var _e = $(this).addClass("selected").find(".items:first");
+            var _id = $(this).attr("itemsId");
+            if (_e.length == 1) {
+                var _b = $('<div id="' + _id + '" class="nav_panel" style=" position:absolute; display:none;z-index:99999;">' + _e.html() + '</div>');
+                _e.remove();
+                $("body").append(_b);
+                _b.mouseleave(function (e) {
+                    $(this).hide();
+                    $(".dropdownlist.selected").removeClass("selected");
+                });
+
+                //周边信息选中或者不选中
+                $("input[type='checkbox']", _b).click(function () {
+                    var _selected = $(this).is(":checked");
+                    //周边改变事件注入
+                    if (window.onNearChanged) window.onNearChanged($(this).next().text(), window.getDataTypes(), _selected);
+                });
+            }
+
+            $("#" + _id).css({ "left": $(this).offset().left, top: $(this).offset().top + $(this)[0].offsetHeight }).show();
+        }).mouseleave(function (e) {
+            var _id = $(this).attr("itemsId");
+            if (e.relatedTarget == null || !(e.relatedTarget.id == _id || $(e.relatedTarget).parents("#" + _id).length > 0)) {
+                $("#" + _id).hide();
+                $(".dropdownlist.selected").removeClass("selected");
+            }
+        });
+
+        //全屏
+        $("#map_fullpage").click(function () {
+            if (window.layout) {
+                window.layout.close('north');
+                window.layout.close('west');
+            }
+            $("#togglewest").hide();
+            $("#exitFullPage").show();
+        });
+
+        //获取要展示的数据源集合
+        window.getDataTypes = function () {
+            var _arr = null;
+            $(".nav_panel input[type='checkbox']:checked").each(function (i) {
+                if (!_arr) _arr = new Array();
+                _arr.push($(this).next().text());
+            });
+
+            return _arr;
+        };
+
+        //获取当前周边信息的group 和 ico图标等信息
+        window.getRoundInfo = function (txt) {
+            var info = { group: null, style: {opacity: 1, "white-space": "nowrap", lineHeihgt: 18, height: 18, border: "0px none", padding: "0px 0px 0px 16px" } };
+            if (txt == "公交站点") {
+                info.group = "rgj";
+                info.style = $.extend({ background: 'url("/Contents/images/icon002.gif") no-repeat 0px -20px'}, info.style);
+            } else if (txt == "餐饮美食") {
+                info.group = "rcy";
+                info.style = $.extend({ background: 'url("/Contents/images/icon002.gif") no-repeat 0px -40px'}, info.style);
+            } else if (txt == "银行") {
+                info.group = "ryh";
+                info.style = $.extend({ background: 'url("/Contents/images/icon002.gif") no-repeat 0px -60px' }, info.style);
+            } else if (txt == "超市") {
+                info.group = "rcs";
+                info.style = $.extend({ background: 'url("/Contents/images/icon002.gif") no-repeat 0px -80px' }, info.style);
+            } else if (txt == "商场") {
+                info.group = "rsc";
+                info.style = $.extend({ background: 'url("/Contents/images/icon002.gif") no-repeat 0px -100px' }, info.style);
+            } else if (txt == "学校") {
+                info.group = "rxx";
+                info.style = $.extend({ background: 'url("/Contents/images/icon002.gif") no-repeat 0px -120px' }, info.style);
+            } else if (txt == "医院") {
+                info.group = "ryy";
+                info.style = $.extend({ background: 'url("/Contents/images/icon002.gif") no-repeat 0px -140px' }, info.style);
+            } else if (txt == "家居卖场") {
+                info.group = "rjj";
+                info.style = $.extend({ background: 'url("/Contents/images/icon002.gif") no-repeat 0px -160px' }, info.style);
+            } else if (txt == "装饰公司") {
+                info.group = "rzs";
+                info.style = $.extend({ background: 'url("/Contents/images/icon002.gif") no-repeat 0px -180px' }, info.style);
+            } else if (txt == "加油站") {
+                info.group = "rjyz";
+                info.style = $.extend({ background: 'url("/Contents/images/icon002.gif") no-repeat 0px -200px' }, info.style);
+            }
+
+            return info;
+        };
+    });
+</script>
+    </ul>
+
+            </div>
+        </div>
+    </div>      
+<script type="text/javascript" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/jquery.pager.2.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var _o = eval('({pagenumber:1,pagecount:1, showLabels:7,pageSize:12,url:"/building/GetBuildings",onOriBefore:function(_this,opts){return window.BuildingPanel.before(_this,opts);},onSuccess:function(data){window.BuildingPanel.success(data);},labels:{first:"首页",prev:"",next:"",last:"末页"}})');
+        if (_o.pagecount > 0) $('#pager-157887794').pager(_o);
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var _contain = $("#building_panel");
+        var _input = $(".msginput", _contain);
+        var _page = $("#pager .page");
+        var _hasInit = false;
+
+        //window.NewbuildingPanel对象
+        window.BuildingPanel = {
+            reset: function () {
+                if (!_hasInit) {    //初始化
+                    //点击均价等条件
+                    $("#property_building .items span").click(function () {
+                        load();
+                    });
+                    _hasInit = true;
+                }
+            }, before: function (_this, opts) {
+                if (opts) opts.params = _getProperty();
+                return true;
+            }, success: function (data) {
+                var d = eval('(' + data + ')');
+
+                if (!data || d.totalCount == 0) {
+                    msg("<span style='color:red;'>没有符合条件的数据</span>");
+                    return;
+                }
+
+                msg();
+                if (d.Buildings) {
+                    $(".total", _contain).text(d.totalCount);
+                    var _items = '', _nb;
+                    for (var i = 0; i < d.Buildings.length; i++) {
+                        _nb = d.Buildings[i];
+                        _items += "<li style='overflow:hidden;zoom:1;border-bottom:1px dashed #d2d2d2; font-size:12px; margin-bottom:0px; padding:5px 3px;' x=" + _nb.EposX + " y=" + _nb.EposY + " gisX=" + _nb.GisLat + " gisY=" + _nb.GisLng + "><a style='float:left;' href='javascript:void(0);'>" + _nb.BuildingName + "</a><span style='margin-right:5px;float:right'>" + (_nb.BuildAvgPrice ? "<span style='margin-right:5px;'>" + _nb.BuildAvgPrice + "元/㎡</span>" : "") + (_nb.HangRate == 0 ? "--" : (_nb.HangRate > 0 ? "<span style='color:red;'>↑" + _nb.HangRate + "%</span>" : "<span style='color:green;'>↓" + _nb.HangRate + "%</span>")) + "</span> </li>";
+                    }
+                    $(".results ul", _contain).html('').empty().html(_items);
+                }
+            }
+        };
+
+        //显示消息
+        var msg = function (txt) {
+            if (txt && txt.length > 0) $(".results .tip:first", _contain).html(txt).show();
+            else $(".results .tip:first", _contain).html('').empty().hide();
+        };
+
+        //msg提示
+        var msg1 = function (txt) {
+            $(".msg", _contain).html(txt || $(".msg", _contain).attr("ovalue"));
+        };
+
+        //点击小区
+        $(".results ul li", _contain).live("click", function (e) {
+            $(this).addClass("selected").siblings(".selected").removeClass("selected");
+            if (typeof ($(this).attr("x")) == "undefined" || $(this).attr("x") == "0") {
+                alert("该小区暂无地图标注");
+                return;
+            }
+            if (window.setMapCenter) window.setMapCenter($(this).attr("x"), $(this).attr("y"), $(this).attr("gisX"), $(this).attr("gisY"));
+        });
+
+        //参数复位
+        var _resetProperty = function () {
+            $(".property .selection", _contain).empty();
+            $("#property_building .items", _contain).each(function () {
+                $("span:first", this).addClass("selected").siblings(".selected:first").removeClass("selected");
+            });
+
+            window.centerId = null;
+        };
+
+        //获取参数值
+        var _getProperty = function () {
+            var p = {};
+            $("#property_building .items", _contain).each(function () {
+                var _t = $("span.selected", this);
+                if (_t.length > 0) eval("p." + _t.attr("type") + "='" + _t.attr("value") + "';");
+            });
+            p.RegionCode = $("#con_region .con_content span.selected", _contain).attr("value");
+
+            return p;
+        };
+
+        //加载数据
+        var load = function () {
+            var _p = _getProperty();
+            _p.pageIndex = 1;
+            $(".results ul", _contain).html('').empty();
+            msg("正在加载数据...");
+            _page.search({ params: _p });
+        };
+
+        //区域选择 触发查询
+        $("#con_region .con_content span", _contain).click(function () {
+            $(this).addClass("selected").siblings(".selected").removeClass("selected");
+            load();
+
+            if (typeof ($(this).attr("x")) == "undefined") return;
+            if (window.setMapCenter) window.setMapCenter($(this).attr("x"), $(this).attr("y"), $(this).attr("gisX"), $(this).attr("gisY"));
+        });
+
+        //搜索
+        $(".btnsearch", _contain).click(function () {
+            var _val = $.trim(_input.val());
+            if (_val.length == 0 || !_input.hasClass("on")) {
+                msg1("<span style='color:red'>请先输入关键字</span>");
+                return;
+            }
+
+            var _autocomplete = _input.focus().data("autocomplete");
+            var _q = _autocomplete.getQuery(_val);
+            setTimeout(function () {
+                _autocomplete.getSuggestions(_q);
+            }, 300);
+        });
+
+        //新盘数据输入
+        var autoComplete = function () {
+            _input.click(function () {
+                if (!$(this).hasClass("on")) $(this).val("");
+            }).keydown(function () {
+                if (!$(this).hasClass("on")) $(this).addClass("on");
+            }).blur(function () {
+                if ($.trim($(this).val()).length == 0) {
+                    $(this).removeClass("on").val($(this).attr("ovalue"));
+                    msg1();
+                } else {
+                    if (!$(this).hasClass("on")) $(this).addClass("on")
+                }
+            }).autocomplete({
+                serviceUrl: '/building/getsuggestions/',
+                minChars: 1,
+                noCache: false,
+                deferRequestBy: 600,
+                tabDisabled: true,
+                autoSelectFirst: true,
+                dataType: 'json',
+                triggerSelectOnValidInput: false,
+                onSearchStart: function () {
+                    var _continue = _input.hasClass("on");
+                    if (_continue) {
+                        //var _ac = _input.data("autocomplete");
+                        //_ac.setOptions({ params: _getProperty() });
+                        msg1("<span style='color:red'>正在加载...</span>");
+                    }
+                    return _continue;
+                },
+                transformResult: function (response, key) {
+                    if ($.trim(_input.val()) != $.trim(key)) { msg1(); return; }
+                    if (response && response.suggestions && response.suggestions.length > 0) msg1();
+                    else msg1("<span style='color:red'>没有找到相关小区,请尝试其他搜索词吧!</span>");
+                    return {
+                        suggestions: $.map(response.suggestions, function (dataItem) {
+                            return { id: dataItem.id, value: dataItem.BuildingName, gisX: dataItem.GisLat, gisY: dataItem.GisLng, x: dataItem.EposX, y: dataItem.EposY };
+                        })
+                    };
+                },
+                formatResult: function (suggestion, currentValue) {
+                    var reEscape = new RegExp('(\\' + ['/', '.', '*', '+', '?', '|', '(', ')', '[', ']', '{', '}', '\\'].join('|\\') + ')', 'g'), pattern = '(' + currentValue.replace(reEscape, '\\$1') + ')';
+                    return suggestion.value.replace(new RegExp(pattern, 'gi'), '<strong>$1<\/strong>');
+                },
+                onSelect: function (suggestion) {
+                    if (!suggestion) return;
+                    msg1();
+                    window.centerId = suggestion.id;    //默认的地图id
+                    if (window.setMapCenter) window.setMapCenter(suggestion.x, suggestion.y, suggestion.gisX, suggestion.gisY);
+                }
+            });
+        };
+
+        //绑定自动完成插件
+        if (!$(".msginput", _contain).autocomplete) {
+            $.include('/Scripts/autocomplete/1.2.9/jquery.autocomplete.js', function () {
+                autoComplete();
+            });
+        } else {
+            autoComplete();
+        }
+    });
+</script>    </div>
+    <!--第二层面板:交通面板-->
+    <div id="traffic_panel" class="container" style="z-index:99999;">
+<div class="resultMsg" style=" position:absolute; width:100%; z-index:999;">
+    <div class="floatl content"></div>
+    <div class="floatr close back">关闭面板</div>
+</div>
+<div id="TrafficResult" class="nscroll" style="margin: 0px; height: 100%; width: 100%; overflow-y: hidden; outline: none;" tabindex="5001">
+    <div style="height:32px;">&nbsp;</div>
+    <ul class="list result"></ul>
+</div>
+
+<!--脚本-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        var _contain = $("#traffic_panel");
+        var _result = $(".list", _contain);
+
+        window.onTrafficSearch = function (start, end, type) {
+            open(start, end, type);
+        };
+
+        //手动关闭
+        $(".close", _contain).click(function () {
+            close();
+            clearLine();
+        });
+
+        //公交和展开和收缩
+        $(".result li.plan .tranTitle", _contain).live('click', function () {
+            if (!$(this).hasClass("selected")) {
+                $(this).parent().addClass("selected").siblings(".selected").removeClass("selected");
+                $(this).parent().find(".steps li.selected").removeClass("selected");
+
+                //画线 标起始点
+                clearLine();
+                var _p = $(this).parent().data("point");
+                if (_p) {
+                    if (window.drawLineOnMap && _p.length > 0) {
+                        var _labels = new Array();
+                        for (var i = 0; i < _p.length; i++) {
+                            window.drawLineOnMap(_p[i].path, "traffic", i == 0, 'b', { color: _p[i].type == 1 ? "#284C98" : "#78BA65" });
+                            if (i == 0) _labels.push({ text: "起", isMiss: false, group: 'trafficSta', bgColor: "#5EA906", x: _p[i].path[0].lat, y: _p[i].path[0].lng });
+                            if (i == _p.length - 1) _labels.push({ text: "终", isMiss: false, group: 'trafficSta', bgColor: "#5EA906", x: _p[i].path[_p[i].path.length - 1].lat, y: _p[i].path[_p[i].path.length - 1].lng });
+                        }
+                        if (window.addLabels) window.addLabels(_labels, 2);
+                    }
+                }
+            } else {
+                $(this).parent().removeClass("selected");
+            }
+            if (window.nScrollResize) window.nScrollResize();
+        });
+
+        //公交项
+        $(".result li.plan tr:not(.td_ignored)").live("mouseenter", function () {
+            $(this).addClass("hover");
+        }).live('mouseleave', function () {
+            $(this).removeClass("hover");
+        }).live('click', function () {
+            $(this).addClass("selected").siblings(".selected").removeClass("selected");
+            if (window.clearLines) window.clearLines({ group: "trafficPart" });
+            var _p = $(this).data("point");
+            if (_p && _p.length > 0 && window.drawLineOnMap) {
+                window.drawLineOnMap(_p[0].path, "trafficPart", true, 'b', { color: "#ff0000" });
+            }
+        });
+
+        //清除线条 
+        var clearLine = function () {
+            if (window.clearLines) {
+                window.clearLines({ group: "traffic" });
+                window.clearLines({ group: "trafficPart" });
+                if (window.clearLabels) window.clearLabels({ group: "trafficSta", type: 2 });
+            }
+        };
+
+        //清空
+        var reset = function () {
+            $(".resultMsg .content:first", _contain).html('').empty(); //清空内容
+            _result.html('').empty();  //清空结果集
+        };
+
+        //打开
+        var open = function (start, end, type) {
+            reset();
+            window.onNsToggle(false);   //上个窗口关闭前把上一个页面的滚动条隐藏
+            _contain.siblings(":visible").hide().addClass("restore_traffic");
+            _contain.show().animate({ top: 0 }, function () {
+                window.onNsToggle(true);  //打开本页面滚动条
+                load(start, end, type);
+            });
+        };
+
+        //关闭
+        var close = function () {
+            _contain.animate({ top: '100%' }, function () {
+                window.onNsToggle(false);  //关闭本页面滚动条
+                $(this).hide().siblings('.restore_traffic').show().removeClass("restore_traffic");
+                window.onNsToggle(true);   //打开恢复页面滚动条
+                reset();
+            });
+        };
+
+        //显示消息
+        var msg = function (txt) {
+            if (txt && txt.length > 0) $(".resultMsg .content:first", _contain).html(txt).show();
+            else $(".resultMsg .content:first", _contain).html('').empty().hide();
+        };
+
+        //数据加载
+        var load = function (start, end, type) {
+            if (!window.trafficSearch) {
+                msg("<span>未定义接口</span>");
+                return;
+            }
+
+            msg("<span style='color:red'>正在加载数据...</span>");
+            window.trafficSearch(start, end, type, function (rs) {
+                if (!rs) {
+                    msg("<span style='color:red'>对不起，没有符合条件的路线!</span>");
+                    return;
+                }
+
+                if (type == "公交") {
+                    if (rs.plans <= 0) {
+                        msg("<span style='color:red'>对不起，没有找到公交路线!</span>");
+                        return;
+                    }
+                    msg("共找到了<span class='totalNum'>" + rs.plans.length + "</span>条线路");
+                    var _points = null, _param = null;
+                    for (var i = 0; i < rs.plans.length; i++) {
+                        _item = rs.plans[i];
+                        _points = new Array();
+
+                        _plan = $("<li class='plan'></li>");
+                        _plan.append("<div class='tranTitle'><span class='floatl'>" + _item.title + "</span><span class='floatr'>约" + _item.meter + "/" + _item.time + "</span>");
+
+                        _steps = $('<table class="steps" cellpadding="0" cellspacing="0" style="width:100%;"></table>');
+                        _steps.append('<tr class="td_ignored"><td><span class="ico_start">&nbsp;</span></td><td style="width:100%;">' + rs.start + '</td></li>');
+
+                        for (var j = 0; j < _item.steps.length; j++) {
+                            _p = _item.steps[j].path;
+                            _param = { type: _item.steps[j].type, path: _p, start: _item.steps[j].start, end: _item.steps[j].end };
+                            _points.push(_param);
+                            _step = $("<tr><td valign='top'><span class='" + (_item.steps[j].type == 1 ? "ico_bus" : "ico_walk") + "'>&nbsp;</span></td><td>" + _item.steps[j].desc + "</td></tr>");
+                            _steps.append(_step);
+                            _step.data("point", [_param]);
+                        }
+                        _steps.append("<tr class='td_ignored'><td><span class='ico_end'>&nbsp;</span></td><td>" + rs.end + "</td></tr>");
+                        _plan.append(_steps);
+                        _plan.data("point", _points);
+                        _result.append(_plan);
+                    }
+                } else if (type == "驾车") {
+                    if (rs.plans <= 0) {
+                        msg("<span style='color:red'>对不起，没有找到驾车路线!</span>");
+                        return;
+                    }
+                    msg("共找到了<span class='totalNum'>" + rs.plans.length + "</span>条驾车线路");
+
+                    for (var i = 0; i < rs.plans.length; i++) {
+                        _item = rs.plans[i];
+                        _plan = $("<li class='plan'></li>");
+
+                        _plan.append("<div class='tranTitle'><span class='floatl'>线路" + (i + 1) + "</span><span class='floatr'>约" + _item.meter + "/" + _item.time + "</span>");
+                        _steps = $('<table class="steps" cellpadding="0" cellspacing="0" style="width:100%;"></table>');
+                        _steps.append('<tr class="td_ignored"><td ><span class="ico_start">&nbsp;</span></td><td style="width:100%;">' + rs.start + '</td></li>');
+                        for (var j = 0; j < _item.steps.length; j++) {
+                            _p = _item.steps[j].path;
+                            _step = $("<tr><td valign='top'><span class='ico_car'>&nbsp;</span></td><td>" + _item.steps[j].desc + "</td></tr>");
+                            _steps.append(_step);
+
+                            _step.data("point", [{ path: _p, type: 1, strat: '', end: ''}]);
+                        }
+                        _steps.append("<tr class='td_ignored'><td><span class='ico_end'>&nbsp;</span></td><td>" + rs.end + "</td></tr>");
+                        _plan.append(_steps);
+
+                        _plan.data("point", [{ path: _item.path, type: 1, strat: '', end: ''}]);
+                        _result.append(_plan);
+                    }
+                }
+
+                $(".result li.plan:first .tranTitle", _contain).trigger("click"); //选中第一项
+                if (window.nScrollResize) window.nScrollResize();
+            });
+        };
+    });
+</script>    </div>
+    <!--脚本-->
+    <script type="text/javascript" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/jquery.autocomplete.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //自定义滚动条resize
+            window.nScrollResize = function () {
+                var _ns = $(".nscroll:visible").getNiceScroll();
+                if (_ns) _ns.resize();
+                return _ns;
+            };
+
+            //左面板大小改变事件
+            window.onWestResize = function (a, b, c, d) {
+                window.nScrollResize();
+            };
+
+            //左面板打开和关闭改变事件
+            window.onNsToggle = function (open) {
+                var _ns = $(".nscroll:visible").getNiceScroll();
+                if (open && _ns) {
+                    _ns.show();
+                    _ns.resize();
+                } else {
+                    _ns.hide();
+                }
+                return _ns;
+            };
+
+            //周边改变事件
+            window.onNearChanged = function (curr, items, isSelcted) {
+                if (isSelcted) {
+                    window.getData([curr]);
+                } else if (window.clearLabels) {
+                    if (window.getRoundInfo) _info = window.getRoundInfo(curr);
+                    window.clearLabels({ group: _info.group }) // 取消选择清除
+                }
+            };
+
+            //小区点击事件
+            window.onBuildingClick = function (o, obj, x, y, id) {
+                //展开对话框
+                obj.appendDialog({
+                    src: '/building/MapBuilding/' + o.value + '/',
+                    x: x,
+                    y: y,
+                    width: 370,
+                    height: 270,
+                    title: o.text,
+                    resetYPad: 50  //从中间位置向上偏移量
+                });
+            };
+
+            //获取数据接口
+            window.getData = function (type, zoom, groups) {
+                //获取地图坐标 由于百度是要通过异步转换成Gis所以要采用回调形式
+                window.getMapRegion(function (pz) {
+                    if (!pz) { alert("对不起,地图尚未正确显示，请刷下重试"); return; }
+                    if (zoom) pz.zoom = zoom;
+
+                    var types = type || window.getDataTypes();    //获取周边选中的信息
+                    var strTypes = "";
+                    if (!type) strTypes = "小区";
+                    if (types) strTypes = (strTypes.length == 0 ? "" : strTypes + ",") + types.join(",");
+
+                    strTypes = "," + strTypes + ",";
+
+                    var callback = function (c) {
+                        var _ishide = true;
+                        //加载周边除小区等数据
+                        if (window.roundSearch) {
+                            strTypes = strTypes.replace(/\,小区\,/g, ","); //剔除小区
+                            var _arr = strTypes.split(",");
+                            _arr.splice(0, 1);   ///剔除左逗号
+                            _arr.splice(_arr.length - 1, 1); ///剔除右逗号
+                            if (_arr.length > 0) {
+                                _ishide = false;
+                                if (window.lbmsg) window.lbmsg("正在加载周边数据...");
+                                window.roundSearch(_arr, function (items) { //搜索周边
+                                    if (window.lbmsg) window.lbmsg();
+                                    if (!items || items.length == 0) return;
+                                    var _b, _arr1 = new Array(), _info;
+                                    for (var i = 0; i < items.length; i++) {
+                                        _b = items[i];
+                                        if (window.getRoundInfo) _info = window.getRoundInfo(items[i].key);
+
+                                        for (var j = 0; j < _b.items.length; j++) {
+                                            _arr1.push({ group: _info ? _info.group : null, style: _info ? _info.style : null, bgColor: 'null', moveText: "<span style='background-color:#000;padding:3px;  position:relative; top:2px;'>" + _b.items[j].title + "<span>", x: _b.items[j].point.lat, y: _b.items[j].point.lng });
+                                        }
+                                    }
+                                    window.addLabels(_arr1, 2);
+                                });
+                            }
+                        }
+
+                        if (window.lbmsg && _ishide) window.lbmsg();
+                    };
+
+                    if (/\,小区\,/.test(strTypes)) {
+                        if (window.lbmsg) window.lbmsg("正在加载小区数据...");
+                        getAreaBuildings(pz, groups, callback);
+                    } else {
+                        callback();
+                    }
+                });
+            };
+
+            /***************注入式事件****************/
+            //自定义滚动条
+            $(".nscroll").niceScroll({
+                touchbehavior: false,
+                cursorcolor: "#e9e9e9",
+                cursoropacitymax: 0.9,
+                cursorwidth: 8,
+                cursorborder: '1px solid #aaa',
+                hidecursordelay: 3000,
+                horizrailenabled: false
+            });
+
+            //筛选条件项mouseenter mouseleave
+            $(".property li").mouseenter(function () {
+                if ($(this).hasClass("selected")) return;
+
+                var _i = $(this).addClass("selected").index();
+                $(this).addClass(_i == 0 || _i % 2 == 0 ? "l" : "r").siblings(".selected").removeClass("selected");
+                var _t = $(this)[0];
+                $(this).parents(".pattern:first").find(".property_panel:first").css({ left: $(this).parent().position().left, top: _t.offsetTop + _t.offsetHeight - 1 }).show().find(".items:eq(" + _i + ")").show().siblings().hide();
+                if (window.nScrollResize) window.nScrollResize();
+            }).mouseleave(function (e) {
+                if (e.relatedTarget == null || !($(e.relatedTarget).hasClass("property_panel") || $(e.relatedTarget).parents(".property_panel:first").length > 0)) {
+                    $(this).parents(".pattern:first").find(".property_panel:first").hide();
+                    $(this).removeClass("selected").siblings(".selected").removeClass("selected");
+                    if (window.nScrollResize) window.nScrollResize();
+                }
+            });
+
+            //筛选条件项面板
+            $(".property_panel").mouseleave(function (e) {
+                if (e.relatedTarget && e.relatedTarget == $(this).parents(".pattern:first").find(".property li.selected div:first")[0]) return;
+
+                $(this).hide();
+                $(this).parents(".pattern:first").find(".property li.selected").removeClass("selected");
+                if (window.nScrollResize) window.nScrollResize();
+            }).find(".items span").click(function () {
+                $(this).addClass("selected").siblings(".selected").removeClass("selected");
+                var _i = $(this).parents(".items:first").index();
+                var _t = $(this).find("a:first").text();
+                if (_t != "不限") $(this).parents(".pattern:first").find(".property li:eq(" + _i + ") .selection:first").text(_t);
+                else $(this).parents(".pattern:first").find(".property li:eq(" + _i + ") .selection:first").text('');
+
+                window.getData(["小区"], _zoomUnit + 1, [buildingGroup]);   //只重新加载小区 忽视幢数
+            });
+
+            /*************私有方法*************/
+            //参数复位
+            var resetProperty = function () {
+                $("#cls_newhouse .property .selection").empty();
+                $("#property_panel .items").each(function () {
+                    $("span:first", this).addClass("selected").siblings(".selected:first").removeClass("selected");
+                });
+            };
+
+            //获取参数值
+            var getProperty = function () {
+                var p = {};
+                $("#property_panel .items").each(function () {
+                    var _t = $("span.selected", this);
+                    if (_t.length > 0) eval("p." + _t.attr("type") + "='" + _t.attr("value") + "';");
+                });
+
+                return p;
+            };
+
+            //获取当前地图上的小区 在某种zoom下还会获取幢数
+            var _zoomUnit = 1, buildingGroup = "buidling", unitGroup = "unit";
+            var getAreaBuildings = function (pz, groups, cb) {
+                if (!window.isAjaxLoad(pz.zoom)) {  //当缩放级别太小 不展示数据
+                    if (cb) cb(false);
+                    return;
+                }
+
+                var _ltp = pz.region.sw, _rbp = pz.region.ne, _z = pz.zoom || 0;
+                var _p = getProperty();
+                $.ajax({
+                    type: "POST", dataType: "json",
+                    url: "/building/GetAreaBuilding",
+                    data: $.extend({ "SLat": _ltp.X || _ltp.lat, "SLng": _ltp.Y || _ltp.lng, "ELat": _rbp.X || _rbp.lat, "ELng": _rbp.Y || _rbp.lng, ShowBuldingUnit: _z < _zoomUnit ? 1 : 0 }, _p),
+                    success: function (data) {
+                        if (cb) cb(!data);
+
+                        if (!data) return;
+                        if (window.clearLabels) {
+                            if (groups) {
+                                for (var i = 0; i < groups.length; i++) window.clearLabels({ group: groups[i] });
+                            } else {
+                                window.clearLabels();
+                            }
+                        }
+
+                        if (window.clearPolys) window.clearPolys({ group: buildingGroup });
+
+                        //幢数
+                        var _arr = null, _b = null, _bgColor = "#3da6cf";
+                        if (data.Unit && window.addLabels) {
+                            _arr = new Array();
+                            for (var i = 0; i < data.Unit.length; i++) {
+                                _b = data.Unit[i];
+                                _arr.push({ group: unitGroup, padding: "1px 3px", bgColor: "#006699", value: _b.id, moveText: _b.HotName, text: _b.ShortHotName, x: _b.EposX, y: _b.EposY, fontSize: '12px', onClick: null });
+                            }
+                            window.addLabels(_arr);
+                        }
+
+                        //小区
+                        if (data.Building && window.addLabels) {
+                            _arr = new Array();
+                            var _isxlp
+                            for (var i = 0; i < data.Building.length; i++) {
+                                _b = data.Building[i];
+                                _arr.push({ group: buildingGroup,defaultClicked: window.centerId && window.centerId == _b.id,moveShowPoly: true, poly: _b.TrackEposStr, cursor: 'pointer', bgColor: _bgColor, value: _b.id, hidText: _b.BuildingName, text: _b.BuildingName + (_b.BuildAvgPrice > 0 ? "<span style='background-color:#fff; color:#ae001e; margin-left:2px; padding:1px 3px;font-size:13px;'><b>" + _b.BuildAvgPrice + "</b>元</span>" : ""), x: _b.EposX, y: _b.EposY, lat: _b.GisLat, lng: _b.GisLng, fontSize: '12px', moveColor: "#FF0000", onClick: window.onBuildingClick });
+                            }
+                            window.addLabels(_arr);
+                            window.centerId = null;
+                        }
+                    },
+                    error: function (m) {
+                        if (cb) cb(false);
+                        msg("加载小区错误!" + m);
+                    }
+                });
+            };
+
+            //加载条件事件 有先后顺序
+            if (window.BuildingPanel) window.BuildingPanel.reset();
+        });
+    </script>
+
+    </div>
+    <div id="centerPanel" class="ui-layout-center ui-layout-pane ui-layout-pane-center open" style="display: block; visibility: visible; position: absolute; margin: 0px; z-index: 2; left: 310px; right: 0px; top: 109px; bottom: 0px; height: 207px; width: 1197px;" pane="center">
+        <div style="position:absolute; left:0px; top:0; height:100%;width:4px; z-index:99998;background:url(&#39;/Contents/images/shad_v_ad56937.png&#39;);"></div>
+        
+<!--mapType-->
+<div class="map_op">
+    <span id="exitFullPage" style=" background-color:#f00; display:none; margin-right:3px;">退出全屏</span>
+    <span class="selected" type="3d">三维地图</span>
+    <span type="1d">街景地图</span>
+    <span type="2d">二维地图</span>
+</div>
+<!--左上角提示-->
+<div id="ltMsg" style=" clear:both; display:none; opacity: .7;filter: alpha(opacity=70);padding:3px; padding-left:10px; background-color:#000; color:#fff;width:280px; position:absolute; left:80px; top:15px; z-index:9999;"></div>
+<!--左下角提示-->
+<div id="lbMsg" style="opacity: 0.7; padding: 3px; color: rgb(255, 255, 255); position: absolute; left: 0px; bottom: 0px; z-index: 9999; display: none; background-color: rgb(0, 0, 0);"></div>
+<!--三维地图-->
+<div class="map_container" style="width:100%; height:100%;">
+<script type="text/javascript" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/jquery.wresize.js"></script>
+<script type="text/javascript" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/jquery.EMap.js"></script>
+<div style=" width:100%; height:100%;" id="eMap60c40422_aa85_48e8_bda5_c96e6c08cb15"><iframe height="0px" width="0px" frameborder="0" scrolling="no"></iframe></div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var _o = eval('({resize:false,w:0,h:0,onRegionChanged:eMap.onRegionChanged,onMove:eMap.onMove,onAfterInit:eMap.onLoad})');
+
+        if (_o.lazyLoad) eval(_o.lazyLoad + '= function () {$("#eMap60c40422_aa85_48e8_bda5_c96e6c08cb15").EMap(_o);}'); //懒加载
+        else $("#eMap60c40422_aa85_48e8_bda5_c96e6c08cb15").EMap(_o) ;
+
+        $("#eMap60c40422_aa85_48e8_bda5_c96e6c08cb15").EMap(_o);
+    });
+</script>
+    <div id="edushiEye" class="mapEye">
+           
+
+<div id="baiduMap224f148a-ce00-439f-8025-bac2e8ba5a16" class="baiduMap" style="width: 100%; height: 100%; overflow: hidden; position: relative; z-index: 0; color: rgb(0, 0, 0); text-align: left; background-color: rgb(243, 241, 236);"><div style="overflow: visible; position: absolute; z-index: 0; left: 76px; top: 17px; cursor: url(http://api0.map.bdimg.com/images/openhand.cur) 8 8, default;"><div class="BMap_mask" style="position: absolute; left: -76px; top: -17px; z-index: 9; overflow: hidden; -webkit-user-select: none; width: 124px; height: 100px;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 800;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700;"><span class="BMap_Marker BMap_noprint" unselectable="on" "="" style="position: absolute; padding: 0px; margin: 0px; border: 0px; cursor: pointer; width: 19px; height: 25px; left: -24px; top: 8px; z-index: -6056600; background: url(http://api0.map.bdimg.com/images/blank.gif);" title=""></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 600;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 500;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 400;"><span class="BMap_Marker" unselectable="on" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: -24px; top: 8px; z-index: -6056600;"><div style="position: absolute; margin: 0px; padding: 0px; width: 19px; height: 25px; overflow: hidden;"><img src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/marker_red_sprite.png" style="display: block; border:none;margin-left:0px; margin-top:0px; "></div></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 300;"><span unselectable="on" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 20px; height: 11px; left: -20px; top: 22px;"><div style="position: absolute; margin: 0px; padding: 0px; width: 20px; height: 11px; overflow: hidden;"><img src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/marker_red_sprite.png" style="display: block; border:none;margin-left:-19px; margin-top:-13px; "></div></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 201;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 1;"><div style="position: absolute; overflow: visible; z-index: -100; left: -14px; top: 33px; display: block; transform: translate3d(0px, 0px, 0px);"><img src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/saved_resource" style="position: absolute; border: none; width: 256px; height: 256px; left: -95px; top: -113px; max-width: none; opacity: 1;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 2; display: none;"><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 0; display: none;"></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 10; display: none;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 3;"></div></div><div class="pano_close" title="退出全景" style="z-index: 1201; display: none;"></div><a class="pano_pc_indoor_exit" title="退出室内景" style="z-index: 1201; display: none;"><span style="float:right;margin-right:12px;">出口</span></a><div class=" anchorBL" style="height: 32px; position: absolute; z-index: 30; bottom: 0px; right: auto; top: auto; left: 1px; display: none;"><a title="到百度地图查看此区域" target="_blank" href="http://map.baidu.com/?sr=1" style="outline: none;"><img style="border:none;width:77px;height:32px" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/copyright_logo.png"></a></div><div id="zoomer" style="position:absolute;z-index:0;top:0px;left:0px;overflow:hidden;visibility:hidden;cursor:url(http://api0.map.bdimg.com/images/openhand.cur) 8 8,default"><div class="BMap_zoomer" style="top:0;left:0;"></div><div class="BMap_zoomer" style="top:0;right:0;"></div><div class="BMap_zoomer" style="bottom:0;left:0;"></div><div class="BMap_zoomer" style="bottom:0;right:0;"></div></div><div unselectable="on" class=" BMap_cpyCtrl BMap_noprint anchorBL" style="cursor: default; white-space: nowrap; color: black; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 11px; line-height: 15px; font-family: arial, sans-serif; bottom: 2px; right: auto; top: auto; left: 4px; position: absolute; z-index: 10; background: none;"><span _cid="1" style="display: inline;"><span style="font-size:11px">© 2015 Baidu&nbsp;- Data © <a target="_blank" href="http://www.navinfo.com/" style="display:inline;">NavInfo</a> &amp; <a target="_blank" href="http://www.cennavi.com.cn/" style="display:inline;">CenNavi</a> &amp; <a target="_blank" href="http://www.365ditu.com/" style="display:inline;">道道通</a></span></span></div></div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var _o = eval('({navigationControl:false,centerLabel:true,contentMenu:false,/*onMove:emapEyeMove,*/onLoad:eMap.onEyeLoad,onClick:eMap.onEyeClick,lazyLoad:"eMap.onEyeLazyLoad"})');
+        
+        if (_o.lazyLoad) eval(_o.lazyLoad+'= function () { $("#baiduMap224f148a-ce00-439f-8025-bac2e8ba5a16").BMap(_o); }'); //懒加载
+        else $("#baiduMap224f148a-ce00-439f-8025-bac2e8ba5a16").BMap(_o); //{onRegionChanged: function (lt, rb, z) {alert(lt.X);}}
+    });
+</script>
+
+    </div>
+</div>
+<!--街景地图-->
+<div class="map_container" style="width:100%; height:100%; display:none;">
+    <div style="width:100%; height:65%;">
+
+<div id="panorama79395f3d-4f02-4532-8ec4-4812bbeefb0e" style="width: 100%; height: 100%;"></div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var _o = eval('({onLoad:sMap.onLoad,onPanoposition_changed:sMap.onPanoPositionChanged, lazyLoad:"sMap.onLazyLoad"})');
+
+        if (_o.lazyLoad) eval(_o.lazyLoad + '= function () {$("#panorama79395f3d-4f02-4532-8ec4-4812bbeefb0e").SMap(_o); }'); //懒加载
+        else $("#panorama79395f3d-4f02-4532-8ec4-4812bbeefb0e").SMap(_o);
+    });
+</script>
+
+<script type="text/javascript" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/jquery.SMap.js"></script>    </div>
+    <div id="halfContain" style="width:100%; height:35%;">
+           
+
+<div id="baiduMapcc918b72-9ae7-4536-84ee-12f394b3271e" class="baiduMap" style="width: 100%; height: 100%;"></div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var _o = eval('({navigationControl:false,centerLabel:true,contentMenu:false,onLoad:sMap.onEyeLoad, lazyLoad:"sMap.onEyeLazyLoad"})');
+        
+        if (_o.lazyLoad) eval(_o.lazyLoad+'= function () { $("#baiduMapcc918b72-9ae7-4536-84ee-12f394b3271e").BMap(_o); }'); //懒加载
+        else $("#baiduMapcc918b72-9ae7-4536-84ee-12f394b3271e").BMap(_o); //{onRegionChanged: function (lt, rb, z) {alert(lt.X);}}
+    });
+</script>
+
+    </div>
+</div>
+<!--二维地图-->
+<div class="map_container" style="width:100%; height:100%; display:none;">
+           
+
+<div id="baiduMapee2529e2-6443-45ca-a59f-931a851578e2" class="baiduMap" style="width: 100%; height: 100%;"></div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var _o = eval('({mapOption:{zoom:18},onLoad:bMap.onLoad,onRegionChanged:bMap.onRegionChanged,transitRouteRenderInMap:true,lazyLoad:"bMap.lazyLoad"})');
+        
+        if (_o.lazyLoad) eval(_o.lazyLoad+'= function () { $("#baiduMapee2529e2-6443-45ca-a59f-931a851578e2").BMap(_o); }'); //懒加载
+        else $("#baiduMapee2529e2-6443-45ca-a59f-931a851578e2").BMap(_o); //{onRegionChanged: function (lt, rb, z) {alert(lt.X);}}
+    });
+</script>
+
+</div>
+
+<!--脚本-->
+<script type="text/javascript" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/jquery.BMap.js"></script>
+<script type="text/javascript">
+    //当前城市的xy点
+    var cityInfo = { latX: 0.0000019986491456, latY: 0.0000030969421372, latC: 120.0402892956610000, lngX: 0.0000017828756799, lngY: -0.0000028282206509, lngC: 30.3043996423834000 , xLat:253104.6445798890000000, yLat: 159553.9992316360000000, xLng: 277153.4712162910000000, yLng: -178864.3301209540000000, xc: -38781724.2437606000000000, yc: -13732532.0005624000000000 }; 
+   
+    var domain = "hangzhou";
+    if (domain == "taizhou"){
+        window.gisPoint = { lat: 28.6617291762511, lng: 121.358410636711 };  //中心点
+    }
+    else{
+        window.gisPoint = { lat: 30.27619969758622, lng: 120.12007395039193 };  //中心点
+    }
+    
+    $(document).ready(function () {
+        //mapType切换
+        $(".map_op span:not(#exitFullPage)").click(function () {
+            if ($(this).hasClass("selected")) return;
+            var _this = $(this);
+            var _last = $(this).siblings(".selected:first");  //上一次选中的
+            var _lastType = _last.attr("type");
+            var _thisType = $(this).attr("type");
+
+            //设置完中心点
+            window.getCenter(function () {
+                var _i = _this.addClass("selected").index();  //当前被选中的索引
+                var _j = _last.removeClass("selected").index(); //上一次的索引
+                $(".map_container:visible").hide();
+                $(".map_container:eq(" + (_i - 1) + ")").show();
+
+                if (window.onMapTypeChanged) window.onMapTypeChanged(_thisType, _lastType);
+
+                if (_thisType == "1d" && sMap) sMap.show();
+                else if (_thisType == "3d" && eMap) eMap.show();
+                else if (_thisType == "2d" && bMap) bMap.show();
+            });
+        });
+
+        //退出全屏
+        $("#exitFullPage").click(function () {
+            if (window.layout) {
+                window.layout.open('north');
+                window.layout.open('west');
+            }
+            $(this).hide();
+            $("#togglewest").show();
+        });
+
+        //鹰眼
+        $(".mapEye").mouseenter(function () {
+            $(this).addClass("in");
+            if (eMap) eMap.eyeRecenter(this);
+        }).mouseleave(function () {
+            $(this).removeClass("in");//.css({ width:124, height:100});
+            if (eMap) eMap.eyeRecenter(this);
+        });
+    });
+
+    //center面板Resize 改变地图尺寸
+    window.onCenterResize = function (a, b, c, d) {
+        if (eMap && eMap.Map) eMap.Map.resize(b[0].offsetWidth, b[0].offsetHeight);
+        if (sMap && sMap.Map) sMap.Map.resize(b[0].offsetWidth, b[0].offsetHeight * 0.35);
+        if (bMap && bMap.Map) bMap.Map.resize(b[0].offsetWidth, b[0].offsetHeight);
+    };
+
+    //获取当前MapType
+    window.getMapType = function () {
+        return $(".map_op span:not(#exitFullPage).selected").attr("type");
+    };
+
+    //获取中心点
+    window.getCenter = function (cb) {
+        var _type = getMapType();
+        if (_type == "3d" && eMap) {
+            var _p = eMap.Map.getGisCenter(cityInfo);
+            gisPoint = { lat: _p.Lat, lng: _p.Lng };
+        } else if (_type == "1d" && sMap) {
+            var _p = sMap.Map.Pano.position;
+            gisPoint = { lat: _p.lat, lng: _p.lng };
+        } else if (_type == "2d" && bMap) {
+            var _p = bMap.Map.getCenter();
+            bMap.Map.baidu2Point(_p.lat, _p.lng, function (p) {
+                gisPoint = { lat: p.lat, lng: p.lng };
+                if (cb) cb(gisPoint);
+            });
+            return;
+        }
+        if (cb) cb(gisPoint);
+    };
+
+    //设置中心点
+    window.setMapCenter = function (x, y, gisx, gisy) {
+        var _type = window.getMapType();
+        if ((_type == "3d" && (!x|| x =="0"|| x == "null" || x == 500) && (!y ||y=="0"|| y == "null" || y == 500)) || (_type != "3d" && (!gisx || gisx == "0" || gisx == "null" || gisx == 500) && (!gisy || gisy=="0" || gisy == "null" || gisy == 500))) {
+            alert("对不起，地图上暂未标注该条信息！");
+            return;
+        }
+
+        gisPoint.lat = gisx;
+        gisPoint.lng = gisy;
+        if (_type == "3d" && eMap && eMap.Map) {   //E都市模式
+            eMap.Map.moveTo(x, y);
+        } else if (_type == "1d" && sMap && sMap.Map) {    //街景模式
+            setTimeout(function () {
+                sMap.Map.setPano({ lat: gisx, lng: gisy });
+            }, 300);
+        } else if (_type == "2d" && bMap && bMap.Map) {    //二维模式
+            setTimeout(function () {
+                bMap.Map.centerAndZoom({ lat: gisx, lng: gisy }, null, true);
+            }, 100);
+        }
+    };
+
+    //左下角提示
+    window.lbmsg = function (txt) {
+        if (txt && txt.length > 0) $("#lbMsg").html(txt).show();
+        else $("#lbMsg").html('').empty().hide();
+    };
+
+    //左上角提示
+    window.ltmsg = function (txt) {
+        if (txt && txt.length > 0) $("#ltMsg").html(txt).show();
+        else $("#ltMsg").html('').empty().hide();
+    };
+
+    //是否进行ajax加载
+    window.isAjaxLoad = function (z) {
+        var _type = window.getMapType();
+        if (_type == "3d" && z > 2) {
+            if (window.clearLabels) window.clearLabels();
+            if (window.ltmsg) window.ltmsg("前缩放级别无气泡展示，请注意调整!");
+            return false;
+        } else if (_type == "2d" && z < 18) {
+            if (window.clearLabels) window.clearLabels();
+            if (window.ltmsg) window.ltmsg("前缩放级别无气泡展示，请注意调整!");
+            return false;
+        }
+
+        if (window.ltmsg) window.ltmsg();
+        return true;
+    };
+
+    //获取当前地图的Region 用于加载数据之用
+    //1.E都市地图E都市地图以及转成gis坐标
+    //2.百度二维地图百度坐标转成gis坐标
+    window.getMapRegion = function (callback) {
+        var _type = window.getMapType();
+
+        if (_type=="3d"&&eMap && callback) {
+            callback({ region: eMap.Map.getRegion(), zoom: eMap.Map.getZoom() });
+        } else if (_type == "2d" && bMap && callback) {
+            bMap.Map.getGisRegion(function (ps) {
+                callback({ region: ps, zoom: bMap.Map.getZoom() });
+            });
+        }
+    };
+
+    //添加标签 model:1为E都市坐标 2为百度坐标 3为gis坐标
+    window.addLabels = function (labels, model) {
+        if (!labels) return;
+        var _type = window.getMapType();
+
+        if (_type == "3d" && eMap.Map) {  //E都市模式
+            if (model == 2 && eMap.Eye) {   //百度坐标模式
+                var _baiduP = new Array();
+                for (var i = 0; i < labels.length; i++) _baiduP.push({ lat: labels[i].x, lng: labels[i].y });
+                eMap.Eye.baidu2PointMore(_baiduP, function (_ps) {
+                    for (var i = 0; i < labels.length; i++) {
+                        if (!_ps[i]) continue;
+                        var _p = eMap.Map.ELatLng2EPoint({ X: _ps[i].lat, Y: _ps[i].lng });
+                        labels[i].x = _p.X;
+                        labels[i].y = _p.Y;
+                        eMap.Map.appendEntity(labels[i]);
+                    }
+                });
+            } else {
+                for (var i = 0; i < labels.length; i++) {
+                    if (model == 3) {   //gis坐标模式
+                        var _p = eMap.Map.ELatLng2EPoint({ X: labels[i].x, Y: labels[i].y });
+                        labels[i].x = _p.X;
+                        labels[i].y = _p.Y;
+                    }
+                    eMap.Map.appendEntity(labels[i]);
+                }
+            }
+        } else if (_type == "2d" && bMap.Map) {
+            if (!model || model == 0 || model == 3) {   //gis坐标转 labels含有 lat lng分别表示纬度和经度
+                bMap.Map.point2BaiduMore(labels, function (_ps) {
+                    for (var i = 0; i < labels.length; i++) {
+                        labels[i].plat = _ps[i].lat;
+                        labels[i].plng = _ps[i].lng;
+                        bMap.Map.appendEntity(labels[i]);
+                    }
+                });
+            } else {
+                for (var i = 0; i < labels.length; i++) bMap.Map.appendEntity(labels[i]);
+            }
+        }
+    }
+
+    //清除标签
+    window.clearLabels = function (opts,isWhole) {
+        var _type = window.getMapType();
+        //E都市清除标签
+        if ((isWhole || _type == "3d") && eMap && eMap.Map) eMap.Map.clearEntities(opts);
+        if ((isWhole || _type == "2d") && bMap && bMap.Map) bMap.Map.clearEntities(opts);
+    }
+
+    //查询周边，百度地图接口支持
+    window.roundSearch = function (keys, callback) {
+        var _bmap = null, _r, sw, ne, isGis = false, _type = window.getMapType();
+        if (_type == "3d" && eMap.Map && eMap.Eye) {
+            _bmap = eMap.Eye;
+            _r = eMap.Map.getGisRegion();
+            sw = _r.sw;
+            ne = _r.ne;
+            isGis = true;
+        } else if (_type == "2d" && bMap.Map) {
+            _bmap = bMap.Map;
+            _r = bMap.Map.getRegion();
+            sw = _r.sw;
+            ne = _r.ne;
+        }
+        if (!_bmap) return;
+
+        _bmap.localSearch(keys, callback, sw, ne, isGis, 20);
+    };
+
+    //查询交通
+    window.trafficSearch = function (start, end, type, callback, policy) {
+        var _bMapTemp, _type = window.getMapType();
+        if (_type == "3d" && eMap && eMap.Eye) {   //E都市模式
+            _bMapTemp = eMap.Eye;
+        } else if (_type == "2d" && bMap && bMap.Map) {
+            _bMapTemp = bMap.Map;
+        }
+
+        if (!_bMapTemp) return;
+        if (type == "公交") {
+            _bMapTemp.busSearch(start, end, callback, policy);
+        } else {
+            _bMapTemp.drivingSearch(start, end, callback, policy);
+        }
+    };
+
+    //地图画线 ptype b或e或g
+    window.drawLineOnMap = function (points, group, isCenter, ptype, options, gps) {
+        var _type = window.getMapType();
+        if (_type == "3d" && eMap && eMap.Map) {
+            var _draw = function (_p) {
+                eMap.Map.drawPolyLine($.extend({
+                    points: _p,
+                    group: group
+                }, options));
+            };
+
+            if (ptype == "b" && eMap.Eye) {
+                eMap.Eye.baidu2PointMore(points, function (_p) {
+                    var _cp = eMap.Map.ELatLng2EpointMore(_p);
+                    var _op = new Array();
+                    for (var i = 0; i < _cp.length; i++) {
+                        if (isCenter && i == 0) setMapCenter(_cp[i].X, _cp[i].Y, _p[i].lat, _p[i].lng);
+                        _op.push(_cp[i].X);
+                        _op.push(_cp[i].Y);
+                    }
+                    _draw(_op);
+                });
+            } else {
+                if (isCenter && points && points.length > 0) {
+                    var _arr = points.split(',');
+                    var _a = eMap.Map.EPoint2ELatLng(_arr[0], _arr[1]);
+                    setMapCenter(_arr[0], _arr[1], _a.lat, _a.lng);
+                }
+                _draw(points);
+            }
+        } else if (_type == "2d" && bMap && bMap.Map) {
+            var _add = function (ps) {
+                if (isCenter) bMap.Map.centerAndZoom(ps[0]);
+                bMap.Map.drawLine(ps, $.extend({
+                    group: group
+                }, options));
+            };
+
+            if (ptype == "b") {
+                _add(points);
+            } else {//ptype == "g"||ptype=="e"
+                var _nps = null, str = null, _ar = null;
+                if (gps != null && gps.length > 0) {
+                    _nps = new Array();
+                    for (var i = 0; i < gps.length; i++) {
+                        str = gps[i];
+                        _ar = str.split(',');
+                        if (_ar.length == 2) _nps.push({ lat: _ar[0], lng: _ar[1] });
+                    }
+                }
+
+                bMap.Map.point2BaiduMore(_nps || points, function (_ps) {
+                    _add(_ps);
+                });
+            }
+        }
+    };
+
+    //清除线
+    window.clearLines = function (opts, isWhole) {
+        var _type = window.getMapType();
+        if ((isWhole || _type == "3d") && eMap && eMap.Map) eMap.Map.clearLines(opts);
+        if ((isWhole || _type == "2d") && bMap && bMap.Map) bMap.Map.clearLines(opts);
+    };
+
+    //画poly  ptype b或e
+    window.drawPolyOnMap = function (points, group, isCenter, ptype, options) {
+        var _type = window.getMapType();
+        if (_type == "3d" && eMap && eMap.Map) {
+            var _draw = function (_p) {
+                eMap.Map.drawPoly($.extend({
+                    points: _p,
+                    group: group
+                }, options));
+            };
+
+            if (ptype == "b" && eMap.Eye) {
+                eMap.Eye.baidu2PointMore(points, function (_p) {
+                    var _cp = eMap.Map.ELatLng2EpointMore(_p);
+                    var _op = new Array();
+                    for (var i = 0; i < _cp.length; i++) {
+                        if (isCenter && i == 0) setMapCenter(_cp[i].X, _cp[i].Y, _p[i].lat, _p[i].lng);
+                        _op.push(_cp[i].X);
+                        _op.push(_cp[i].Y);
+                    }
+                    _draw(_op);
+                });
+            } else {
+                _draw(points);
+            }
+        }
+    };
+
+    //清除poly
+    window.clearPolys = function (opts) {
+        var _type = window.getMapType();
+        if (_type == "3d" && eMap) eMap.Map.clearPolys(opts);
+    };
+</script>
+<script type="text/javascript">
+    //E都市地图
+    window.EMap = function () {
+        var obj = this;
+
+        this.show = function () {
+            var _p = obj.Map.ELatLng2EPoint({ X: gisPoint.lat, Y: gisPoint.lng });
+            obj.Map.moveTo(_p.X, _p.Y, 0);
+            if (window.task) window.task(); //任务：加载后要做的事情 如maptype却换同步等
+        };
+
+        //E都市地图加载 进行鹰眼地图加载
+        this.onLoad = function (_map) {
+            obj.Map = _map;
+            if (eMap.onEyeLazyLoad) eMap.onEyeLazyLoad();
+        };
+
+        //E都市移动 鹰眼也跟着移动
+        this.onMove = function (a, b) {
+            if (obj.Eye) obj.Eye.centerAndZoom({ lat: b.Lat, lng: b.Lng }, null, true);
+        };
+
+        //鹰眼地图加载
+        this.onEyeLoad = function (e, o) {
+            obj.Eye = o;
+            if (obj.Map) {
+                var _x = obj.Map.EPoint2ELatLng(obj.Map.getCenter());
+                o.centerAndZoom({ lat: _x.Lat, lng: _x.Lng }, null, true);
+            }
+        };
+
+        //鹰眼地图点击 E都市加载至中心点
+        this.onEyeClick = function (e, o) {
+            o.moveTo(e.point.lat, e.point.lng);
+            o.baidu2Point(e.point.lat, e.point.lng, eMapCenter);
+        };
+
+        //鹰眼缩小或者放大都要居中
+        this.eyeRecenter = function (target) {
+            if (obj.Eye && target) {
+                obj.Eye.resize(target.offsetWidth, target.offsetHeight, obj.Eye.centerMarker.getPosition());
+            }
+        };
+
+        //地图区域加载
+        this.onRegionChanged = function (r, z, o) {
+            if (!window.isAjaxLoad(z)) {
+                if (window.ltmsg) window.ltmsg();
+            }
+
+            if (window.getData) window.getData();
+        };
+
+        //e都市移动
+        var eMapCenter = function (p) {
+            if (obj.Map) {
+                var _x = obj.Map.ELatLng2EPoint({ X: p.lat, Y: p.lng });
+                obj.Map.moveTo(_x.X, _x.Y);
+            }
+        };
+    };
+
+    var eMap = new window.EMap();
+</script>
+<script type="text/javascript">
+    //街景地图
+    window.SMap = function () {
+        var obj = this;
+        obj.Map = null;
+
+        this.show = function () {
+            if (!obj.Map) {
+                sMap.onLazyLoad();
+                sMap.onEyeLazyLoad();
+            } else {
+                setTimeout(function () {
+                    obj.Map.setPano(gisPoint);
+                }, 300);
+            }
+        };
+
+        this.onLoad = function (o) {
+            obj.Map = o;
+            o.setPano({ lat: gisPoint.lat, lng: gisPoint.lng });
+        };
+
+        this.onPanoPositionChanged = function () {
+            if (!obj.Eye) return;
+
+            var _p = obj.Map.Pano.position;
+            obj.Eye.point2Baidu(_p.lat, _p.lng, function (p) {
+                obj.Eye.moveTo(p.lat, p.lng);
+            });
+        };
+
+        this.onEyeLoad = function (a, b) {
+            obj.Eye = b
+            b.addEvent("click", function (c) {
+                var latlng = c.point;
+                b.moveTo(latlng.lat, latlng.lng);
+
+                b.baidu2Point(latlng.lat, latlng.lng, function (p) {
+                    obj.Map.setPano(p);
+                });
+            });
+        };
+    };
+
+    var sMap = new window.SMap();
+</script>
+<script type="text/javascript">
+    //百度二维地图
+    window.BMap = function () {
+        var obj = this;
+        obj.Map = null;
+
+        this.show = function () {
+            if (!obj.Map) {
+                bMap.lazyLoad();
+            } else {
+                setTimeout(function () {
+                    obj.Map.centerAndZoom(gisPoint, null, true);
+                    if (window.task) window.task();
+                }, 100);
+            }
+        };
+
+        this.onLoad = function (a, b) {
+            obj.Map = b;
+            b.centerAndZoom(gisPoint, null, true);
+            if (window.task) window.task();
+        };
+
+        this.onRegionChanged = function (region, z) {
+            if (!window.isAjaxLoad(z)) {
+                if (window.ltmsg) window.ltmsg();
+            }
+
+            if (window.getData) window.getData();
+        };
+    };
+
+    var bMap = new window.BMap();
+</script>
+    </div>
+    
+
+
+<!--左导航-->
+
+
+<!--右导航-->
+
+
+<!--west面板-->
+
+
+<!--地图面板-->
+
+     <div style="display: none">
+            <script type="text/javascript">
+                var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb054a1e13342a6dd4c5e6964b7354288' type='text/javascript'%3E%3C/script%3E"));
+            </script><script src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/h.js" type="text/javascript"></script>
+            
+
+            <script type="text/javascript">
+                var _cityDomain = "hangzhou";
+                        //PV统计之用户追踪
+                var adduser = { 
+                    SessionId: "9b2d10afbbfa43f1ac7b00f843a107aa",
+                    CustId:0,
+                    VisitId:"",
+                    Ip:"112.10.247.5",
+                    ReferUrl:"",
+                    CurrUrl:"http://hangzhou.fangtoo.com/map/",
+                    Agent:"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36",
+                    StatusCode:200,
+                    Platform:1 
+                };
+                
+                if($.browser.msie){
+                    PV.ifreamSubmitWithForm('usertrace',_cityDomain, adduser);
+                }else{
+                    PV.ifreamSubmit('usertrace',_cityDomain, adduser);
+                }
+            </script>
+        </div><iframe id="ifr1usertrace" name="ifr1" height="0" width="0" src="./杭州房产地图,杭州楼盘地图,杭州三维房产地图-房途网_files/proxy.html" style="display: none;"></iframe>
+
+
+
+<span id="" resizer="north" class="ui-layout-resizer ui-layout-resizer-north ui-layout-resizer-open ui-layout-resizer-north-open" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 1; top: 109px; display: none;"><div id="" title="关闭" class="ui-layout-toggler ui-layout-toggler-north ui-layout-toggler-open ui-layout-toggler-north-open" style="position: absolute; display: block; padding: 0px; margin: 0px; overflow: hidden; text-align: center; font-size: 1px; cursor: pointer; z-index: 1;"></div></span><span id="" resizer="west" class="ui-layout-resizer ui-layout-resizer-west ui-layout-resizer-open ui-layout-resizer-west-open" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 1; left: 310px; display: none;"><div id="" title="关闭" class="ui-layout-toggler ui-layout-toggler-west ui-layout-toggler-open ui-layout-toggler-west-open" style="position: absolute; display: block; padding: 0px; margin: 0px; overflow: hidden; text-align: center; font-size: 1px; cursor: pointer; z-index: 1;"></div></span><div class="autocomplete-suggestions" style="position: absolute; display: none; top: 288.672px; left: 10px; width: 229px; max-height: 300px; z-index: 9999;"></div></div><div id="ascrail2001" class="nicescroll-rails" style="width: 10px; z-index: 99999; cursor: default; position: absolute; top: 0px; left: 90px; height: 100px; display: none;"><div style="position: relative; top: 0px; float: right; width: 8px; height: 0px; border: 1px solid rgb(170, 170, 170); border-radius: 5px; background-color: rgb(233, 233, 233); background-clip: padding-box;"></div></div>
+</body></html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: azure;
+}
+.parent{
+    width: 50%;
+    height: 100%;
+    background-color: orangered;
+    text-align: center;
+}
+.child{
+    width: 100px;
+    height: 200px;
+    background-color: cadetblue;
+    display: inline-block;
+    vertical-align: middle;
+}
+i{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+</style>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <i></i>
+    </div>
+</body>
+
+<script src="jquery1.9.js"></script>
+</body>
+</html>

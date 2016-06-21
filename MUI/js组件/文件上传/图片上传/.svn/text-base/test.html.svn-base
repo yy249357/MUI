@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body> 
+图像:<input type="file" name="uploadImg" onchange="Javascript:validate_img(this);" size="12"/> 
+    <div><img src="1.jpg"></div>   
+    <div><img src="2.jpg"></div>
+</body>  
+<script type="text/javascript"> 
+function validate_img(a){
+ var file = a.value;
+ if(!/.(gif|jpg|jpeg|png|GIF|JPG|png)$/.test(file)){
+  alert("图片类型必须是.gif,jpeg,jpg,png中的一种");
+  return false;
+}else{
+     var image = new Image();
+     image.src = file;
+     var height = image.height;
+     var width = image.width;
+     var filesize = image.filesize;
+      alert(height+"x.."+filesize);
+     if(width>80 && height>80 && filesize>102400){
+      alert('请上传80*80像素 或者大小小于100k的图片');
+      return false;
+     }
+ }
+ alert("图片通过");
+}
+</script> 
+ 
+</html>

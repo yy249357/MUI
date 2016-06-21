@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>圣诞主题</title>
+    <style type="text/css">
+    .bird {
+        min-width: 91px;
+        min-height: 71px;
+        top: 10%;
+        position: absolute;
+        z-index: 10;
+        background: url(http://img.mukewang.com/55ade1700001b38302730071.png)
+    }
+    
+    .birdFly {
+        -moz-animation: bird-slow 400ms steps(1,start) infinite;
+        -webkit-animation-name: bird-slow;
+        -webkit-animation-duration: 1000ms;
+        -webkit-animation-timing-function: steps(3);
+        -webkit-animation-iteration-count: infinite;
+    }
+    @-webkit-keyframes bird-slow{
+        0%{
+            background-position-x:-0px;
+        }
+        100%{
+            background-position-x:-273px;
+        }
+    }
+    
+    @-moz-keyframes bird-slow{
+        0%{
+            background-position:-182px 0px;
+        }
+        50%{
+            background-position:0px 0px;
+        }
+        75%{
+            background-position:-91px 0px;
+        }
+        100%{
+            background-position:-182px 0px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    steps(3)实现帧动画
+    <div class="bird birdFly"></div>
+</body>
+<script type="text/javascript">
+var docEl = document.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function() {
+        docEl.style.fontSize = 20 * (docEl.clientWidth / 320) + 'px';
+    };
+window.addEventListener(resizeEvt, recalc, false);
+document.addEventListener('DOMContentLoaded', recalc, false);
+</script>
+</html>

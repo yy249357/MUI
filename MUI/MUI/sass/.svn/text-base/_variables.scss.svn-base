@@ -1,0 +1,13 @@
+// 背景颜色
+$bg-color : #ddd !default;
+
+
+// 文字颜色
+$red : red;
+$yellow : yellow;
+$blue : blue;
+$grey : yellow;
+
+
+//布局
+$footer-height : 50px !default;

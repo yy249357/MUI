@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+.scrollDiv{width:300px;height:100px;min-height:25px;line-height:25px;overflow:hidden}
+.scrollDiv li{height:25px;line-height:25px;}
+</style>
+</head>
+<body>
+<div class="scrollDiv">
+  <ul class="mulitline">
+    <li>这是公告标题的第一行</li>
+    <li>这是公告标题的第二行</li>
+    <li>这是公告标题的第三行</li>
+    <li>这是公告标题的第四行</li>
+    <li>这是公告标题的第五行</li>
+    <li>这是公告标题的第六行</li>
+    <li>这是公告标题的第七行</li>
+    <li>这是公告标题的第八行</li>
+  </ul>
+</div>
+<script src="jquery1.9.js"></script>
+<script>
+// $(function(){
+//     //单行应用
+//     var _wrap=$('ul.line');//定义滚动区域
+//     var _interval=2000;//定义滚动间隙时间
+//     var _moving;//需要清除的动画
+//     _wrap.hover(function(){
+//         clearInterval(_moving);//当鼠标在滚动区域中时,停止滚动
+//     },function(){
+//         _moving=setInterval(function(){
+//             var _field=_wrap.find('li:first');//此变量不可放置于函数起始处,li:first取值是变化的
+//             var _h=_field.height();//取得每次滚动高度
+//             _field.animate({marginTop:-_h+'px'},600,function(){//通过取负margin值,隐藏第一行
+//                 _field.css('marginTop',0).appendTo(_wrap);//隐藏后,将该行的margin值置零,并插入到最后,实现无缝滚动
+//             })
+//         },_interval)//滚动间隔时间取决于_interval
+//     }).trigger('mouseleave');//函数载入时,模拟执行mouseleave,即自动滚动
+// });
+$(function(){
+    //多行应用
+    var _wrap=$('ul.mulitline');//定义滚动区域
+    var _interval=3000;//定义滚动间隙时间
+    var _moving;//需要清除的动画
+    _wrap.hover(function(){
+        clearInterval(_moving);//当鼠标在滚动区域中时,停止滚动
+    },function(){
+        _moving=setInterval(function(){
+            var _field=_wrap.find('li:first');//此变量不可放置于函数起始处,li:first取值是变化的
+            var _h=_field.height();//取得每次滚动高度
+            _field.animate({marginTop:-_h+'px'},600,function(){//通过取负margin值,隐藏第一行
+                _field.css('marginTop',0).appendTo(_wrap);//隐藏后,将该行的margin值置零,并插入到最后,实现无缝滚动
+            })
+        },_interval)//滚动间隔时间取决于_interval
+    }).trigger('mouseleave');//函数载入时,模拟执行mouseleave,即自动滚动
+});
+</script>
+</body>
+</html>

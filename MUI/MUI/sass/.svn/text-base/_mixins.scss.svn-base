@@ -1,0 +1,219 @@
+// 透明度
+@mixin opacity($opacity: 0.5) {
+	$opacityMultiplied: ($opacity * 100);   
+	filter:         alpha(opacity=$opacityMultiplied);
+	-ms-filter:     "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $opacityMultiplied + ")";
+	opacity:        $opacity;
+}
+
+// 圆角
+@mixin rds($width1:0,$width2:$width1,$width3:$width1,$width4:$width1){
+	border-top-left-radius: $width1;
+	border-top-right-radius: $width2;	
+	border-bottom-right-radius: $width3;
+	border-bottom-left-radius: $width4;
+}
+
+// 垂直背景渐变
+@mixin background-gradient($startColor: #3C3C3C, $endColor: #999999) {
+	background-color: $startColor;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
+	background-image: -webkit-linear-gradient(top, $startColor, $endColor);
+	background-image:    -moz-linear-gradient(top, $startColor, $endColor);
+	background-image:     -ms-linear-gradient(top, $startColor, $endColor);
+	background-image:      -o-linear-gradient(top, $startColor, $endColor);
+	background-image:         linear-gradient(top, $startColor, $endColor);
+	filter:            progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}');
+}
+// 水平背景渐变
+@mixin background-horizontal($startColor: #3C3C3C, $endColor: #999999) {
+	background-color: $startColor;
+	background-image: -webkit-gradient(linear, left top, right top, from($startColor), to($endColor));
+	background-image: -webkit-linear-gradient(left, $startColor, $endColor);
+	background-image:    -moz-linear-gradient(left, $startColor, $endColor);
+	background-image:     -ms-linear-gradient(left, $startColor, $endColor);
+	background-image:      -o-linear-gradient(left, $startColor, $endColor);
+	background-image:         linear-gradient(left, $startColor, $endColor);
+	filter:            progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}', gradientType='1');
+}
+
+
+// 箭头
+@mixin arrow($direction,$size,$color) {
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden;
+	border-width: $size;
+	cursor: pointer;
+	@if $direction == top {
+	  border-style: dashed dashed solid dashed;
+	  border-color: transparent transparent $color transparent;
+	  border-top: none;
+	}
+	@else if $direction == bottom {
+	  border-style: solid dashed dashed dashed;
+	  border-color: $color transparent transparent transparent;
+	  border-bottom: none;
+	}
+	@else if $direction == right {
+	  border-style: dashed dashed dashed solid;
+	  border-color: transparent transparent transparent $color;
+	  border-right: none;
+	}
+	@else if $direction == left {
+	  border-style: dashed solid dashed dashed;
+	  border-color: transparent $color transparent transparent;
+	  border-left: none;
+	}
+}
+
+// 三角形
+@mixin triangle($direction,$width,$color){
+	width:0;
+	height:0;
+	@if $direction == top{
+		border-width:0 $width $width;
+		border-style: solid;
+		border-color:transparent transparent $color;
+	}
+	@if $direction == bottom{
+		border-width:$width $width 0;
+		border-style: solid;
+		border-color:$color transparent transparent;
+	}
+	@if $direction == left{
+		border-width:$width $width $width 0;
+		border-style: solid;
+		border-color:transparent $color transparent transparent;
+	}
+	@if $direction == right{
+		border-width:$width 0 $width $width;
+		border-style: solid;
+		border-color: transparent transparent transparent $color;
+	}
+	
+}
+
+// 垂直三角形
+@mixin V-triangle($direction,$width,$color){
+	width:0;
+	height:0;
+	@if $direction == top-left{
+		border-width:$width $width 0 0;
+		border-style: solid;
+		border-color:$color transparent transparent transparent;
+	}
+	@if $direction == top-right{
+		border-width:$width 0 0 $width;
+		border-style: solid;
+		border-color:$color transparent transparent transparent;
+	}
+	@if $direction == bottom-left{
+		border-width:$width 0 0 $width;
+		border-style: solid;
+		border-color:transparent transparent transparent $color;
+	}
+	@if $direction == bottom-right{
+		border-width:$width $width 0 0;
+		border-style: solid;
+		border-color:transparent $color transparent transparent;
+	}		
+}
+
+//按钮
+@mixin btn($color, $background, $border) {
+	display: inline-block;
+	margin-bottom: 0; 
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none; 
+	border: 1px solid transparent;
+	white-space: nowrap;
+	color: $color;
+	background-color: $background;
+	border-color: $border;
+
+	&:focus,
+	&.focus {
+	  color: $color;
+	  background-color: darken($background, 10%);
+	      border-color: darken($border, 25%);
+	}
+	&:hover {
+	  color: $color;
+	  background-color: darken($background, 10%);
+	      border-color: darken($border, 12%);
+	}
+	&:active{
+	  color: $color;
+	  background-color: darken($background, 10%);
+	      border-color: darken($border, 12%);
+
+		&:hover,
+		&:focus,
+		&.focus {
+	    color: $color;
+	    background-color: darken($background, 17%);
+	    border-color: darken($border, 25%);
+		}
+	}
+	&:active{
+	  background-image: none;
+	}
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&,
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active {
+	    background-color: $background;
+	        border-color: $border;
+		}
+	}
+}
+
+//分散对齐
+@mixin dis-justify($allWidth, $width){
+	width: $allWidth;
+	text-align: justify;
+	li{
+		width: $width;
+		display: inline-block;
+		img{
+			width: 100%;
+			display: inline-block;
+			text-align: justify;
+		}
+	}
+	&:after{
+		display:inline-block;
+		overflow:hidden;
+		width:100%;
+		height:0;
+		content:'';
+		vertical-align:top;
+	}
+}
+
+//底部
+@mixin foot($height:50px){
+	position:fixed;
+	bottom:0;
+	left: 0;
+	right: 0;
+	margin:auto;
+	margin-top: -$height; 
+	width: 100%;
+	height: $height;
+	line-height: $height;
+	z-index:1000;
+	max-width: 640px!important;
+}
+

@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>首页</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="images/app-icon72x72@2x.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+<link rel="apple-touch-icon-precomposed" href="images/app-icon72x72@2x.png">
+<meta name="msapplication-TileImage" content="images/app-icon72x72@2x.png">
+<meta name="msapplication-TileColor" content="#0e90d2">
+<link rel="stylesheet" href="css/amazeui.min.css">
+<link rel="stylesheet" href="css/css.css">
+<link rel="stylesheet" href="css/app1.css">
+</head>
+<body>
+<div style="margin-bottom">
+<header data-am-widget="header" class="am-header am-header-default">
+    <div class="am-header-left am-header-nav" onclick="javascript:window.history.go(-1);return false;">
+        <a href="#" class="out">
+            <i class="out"></i>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        团购详情
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="javascript:;" class="group-star" id="collect"><i></i></a>
+        <a href="#" class="group-share" id="share"><i></i></a>
+    </div>
+    <div class="jiathis_style_32x32 share">
+        <a class="jiathis_button_weixin"></a><a class="jiathis_button_qzone"></a><a class="jiathis_button_tsina"></a><a class="jiathis_button_tqq"></a><a class="jiathis_button_renren"></a>
+    </div>
+</header>
+<article class="bg-f2">
+    <section>
+        <div data-am-widget="slider" class="am-slider am-slider-a1 am-slider-manual" data-am-slider='{&quot;directionNav&quot;:false}' >
+            <ul class="am-slides">
+                <li><img src="images/group-banner1.png"></li>
+                <li><img src="images/group-banner1.png"></li> 
+                <li><img src="images/group-banner1.png"></li>
+            </ul>
+        </div>
+    </section>    
+    <section class="bb-d1" id="instant">
+        <div class="clearfix">
+            <div class="fl">
+                <p>狗狗护理套餐(10次装)</p>
+                <p><span class="red">￥120</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="co-89">市场价:<del>￥168</del></span></p>
+            </div>
+            <div class="fr">
+                <a href="product-order.html" class="group-btn">立即抢购</a>
+            </div>
+        </div>
+    </section>  
+    <div id="fixWrap"> 
+    <section style="margin-top:15px;">
+        <div class="p-10 bt-d1 clearfix">
+            <div class="fl">数量</div>
+            <div class="fr">
+                <div class="group-digit clearfix">
+                    <a href="javascript:;" id="minus"><i class="am-icon-minus"></i></a>
+                    <a href="javascript:;" id="digit" class="group-digit-num">1</a>
+                    <a href="javascript:;" id="add"><i class="am-icon-plus"></i></a>
+                </div>               
+            </div>
+        </div>
+        <div class="group-layout group-star btb-d1 clearfix">
+            <div class="group-star01 fl"><i class="yellow-star"></i><i class="yellow-star"></i><i class="yellow-star"></i><i class="grey-star"></i><i class="grey-star"></i></div> 
+            <div class="group-star02 fr"><a href="groupbuy-evaluate.html">212人宠友评价<i class="am-icon-chevron-right"></i></a></div>
+        </div>
+    </section>
+    </div>
+</article>
+</div>
+<script src="js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/amazeui.min.js"></script>
+<script src="js/pet.js"></script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script> 
+<script>
+var instant = $('#instant');
+var fixWrap = $('#fixWrap');
+$(window).scroll(function(){
+    var p = $(window).scrollTop();
+    var headerH = $("header").outerHeight();
+    if(p>202){
+        instant.css('position', 'fixed');
+        instant.css('top', 0);
+        fixWrap.css('padding-top', '60px');
+    }else{
+        instant.css('position', 'static');
+        instant.css('top', '');
+        fixWrap.css('padding-top', '');
+    }
+});
+</script>
+</body>
+</html>

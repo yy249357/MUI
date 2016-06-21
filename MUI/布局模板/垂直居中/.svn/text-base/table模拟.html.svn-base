@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+.wrapper{ 
+height:400px; 
+display:table; 
+} 
+.content{ 
+vertical-align:middle; 
+display:table-cell; 
+border:1px solid #FF0099; 
+background-color:#FFCCFF; 
+width:760px; 
+}
+</style>
+<div class="wrapper">
+	<div class="content">keleyi.com</div>
+</div>
+
+<script src="jquery1.9.js"></script>
+</body>
+</html>

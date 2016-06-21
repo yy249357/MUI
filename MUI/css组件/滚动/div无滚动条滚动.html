@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<style>
+ul{margin: 0;padding: 0}
+li{list-style: none;}
+.wrap{width: 180px;height: 70px;overflow: hidden;border: 1px solid black;text-align: center;}
+/*方案1*/
+/*.scroll{width: 200px;height: 70px;overflow-y:auto;}*/
+
+/*方案2*/
+.scroll{height: 70px;overflow-y:auto;}
+.scroll::-webkit-scrollbar{width:0px}
+</style>
+<div class="wrap">
+	<div class="scroll">
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+		</ul>
+	</div>
+</div>
+<script src="jquery1.9.js"></script>
+<script>
+$(".scroll").on('touchmove', function(e) {
+	var touch = e.touch[0];
+	if (touch.pageX > 10) {
+		$(".scroll").animate({
+			scrollLeft: $("#topnav-slider .TopNav").scrollLeft() + 20
+		}, 100);
+	}
+	if (touch.pageX < -10) {
+		$(".scroll").animate({
+			scrollLeft: $("#topnav-slider .TopNav").scrollLeft() - 20
+		}, 100);
+	}
+});
+</script>
+</body>
+</html>

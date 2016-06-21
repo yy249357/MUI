@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+/*原理：我们打个比方，有四块红色和黑色的木板代表元素的四个边框，把他们两横两竖重叠起来，这时候他们在二维平面的投影便成了上面的效果。*/
+.triangle_border_nw{
+    width:0;
+    height:0;
+    border-width:30px 30px 0 0;/*左边为0,被上边全部投影*/
+    border-style:solid;
+    border-color:#6c6 transparent transparent transparent;
+    margin:40px auto;
+    position:relative;
+}
+/*或者
+.triangle_border_nw{
+    width:0;
+    height:0;
+    border-width:0 0 30px 30px;
+    border-style:solid;
+    border-color:transparent transparent transparent #6c6;
+    margin:40px auto;
+    position:relative;
+}*/
+</style>
+</head>
+<body>
+<div class="triangle_border_nw"></div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    width: 200px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid black;
+}
+.parent:first-child .mm{
+    background: red!important;
+}
+h3{width: 30px;height: 20px;}
+h3:first-child{border: 1px solid red;;}
+</style>
+<body>
+使用条件：必须存在同一个父元素，且选择的子元素同级
+<div>
+    <div class="parent">
+        <ul>
+            <li></li>
+            <li class="mm"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="parent">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="mm"></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="parent">
+        <ul>
+            <li class="mm"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+<!-- <section> -->
+<h3 class="test">1</h3>
+<h3 class="test">2</h3>
+<h3 class="test">3</h3>
+<h3 class="test">4</h3>
+<!-- </section> -->
+</body>
+
+<script src="jquery1.9.js"></script>
+</body>
+</html>

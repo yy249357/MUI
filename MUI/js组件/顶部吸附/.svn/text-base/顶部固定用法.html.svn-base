@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+*{margin: 0; padding: 0;}
+p{width: 100%; height: 400px;}
+header{height: 50px;}
+.menu{width: 100%; height: 50px;background: #000;}
+.wrap{width: 100%;position: relative; top:0; width: 100%; height: 1px;}
+.con{height: 2000px; background: #ccc;}
+.sticky{position: fixed; top:0; z-index: 10;}
+</style>
+<body>
+	<p></p>
+	<header>
+		<div class="menu"></div>
+	</header>
+	<div class="wrap"></div>
+	<div class="con">我是顶部</div>
+<script src="jquery1.9.js"></script>
+<script>
+var header = $('header');
+var menu = $(".menu");
+var height = header.offset().top;  //注意和js中offsetTop的不同
+$(window).scroll(function(){
+	var offsetY = $(window).scrollTop();
+	//注意不是offsetY > 400px,否则报SyntaxError: Unexpected identifier
+	offsetY>height ? menu.addClass('sticky') : menu.removeClass('sticky');
+})
+
+
+//原生写法
+// var header = document.querySelector('header');  
+// var height = header.offsetTop;  
+// function onScroll(e) {  
+//   window.scrollY >= height ? header.classList.add('sticky') :  
+//                                   header.classList.remove('sticky');  
+// }    
+// document.addEventListener('scroll', onScroll);
+</script>
+</body>
+</html>

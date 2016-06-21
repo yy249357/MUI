@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>jQuery Autocomplete入门示例</title>
+<!-- 引入jQuery UI的css文件 -->
+<link rel="stylesheet" href="jquery-ui.css">
+<!-- 引入jQuery的js文件 -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js" ></script>
+<!-- 引入jQuery UI的js文件 -->
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js" ></script>
+</head>
+<body>
+
+<label for="language">请输入指定的语言：</lable>
+<input id="language" name="language" type="text">
+<script>
+$("#language").autocomplete({
+    // 静态的数据源
+    source:"public.php"
+});
+</script>
+</body>
+</html>

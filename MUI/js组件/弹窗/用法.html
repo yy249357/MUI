@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <section class="bg-ff bottom-fixed hidden z300" id="showId">
+        <div class="bb1 row">
+            <div class="grid3 orderSuccess-share"><img src="images/weixin2.png"  alt=""><span>微信</span></div>
+            <div class="grid3 orderSuccess-share"><img src="images/QQ.png" alt=""><span>QQ</span></div>
+            <div class="grid3 orderSuccess-share"><img src="images/weibo.png" alt=""><span>微博</span></div>
+            <div class="grid3 orderSuccess-share"><img src="images/momo.png" alt=""><span>陌陌</span></div>
+        </div>
+        <p class="bb1 orderSuccess-cancel" id="closeId">取消分享</p>
+    </section>
+    <div class="mask" id="bgId"></div>
+<script>
+function popup(clickId, showId, bgId){
+    var click = document.getElementById(clickId);
+    var show = document.getElementById(showId);
+    var bg = document.getElementById(bgId);
+    click.onClick(function(){
+        bg.style.display='block';
+        show.style.display='block';
+        return false;
+    })
+    bg.onClick(function(){
+        bg.style.display='none';
+        show.style.display='none';
+    })
+}
+popup("clickId", "showId", "bgId"); 
+</script>
+</body>
+</html>
+
+

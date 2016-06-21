@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+.clearfix:after { visibility: hidden; display: block; content: " "; clear: both; height: 0; line-height: 0; }
+
+.clearfix { zoom: 1; }
+
+.fl { float: left; display: inline; }
+
+.fr { float: right; display: inline; }
+.qishu-digit { width: 100px; margin: 0 auto 20px auto; text-align: center; border: 1px solid #666; border-radius: 6px; }
+.qishu-digit input { width: 44px; height: 24px; line-height: 24px; float: left; border: 0; outline: none; text-align: center; font-size: 16px; }
+.qishu-digit a { display: block; width: 26px; height: 26px; float: left; text-align: center; background-size: 50% !important; }
+.qishu-digit a:first-child { border-right: 1px solid #666; background: url("minus.png") center center no-repeat; }
+.qishu-digit a:last-child { border-left: 1px solid #666; background: url("add.png") center center no-repeat; }
+</style>
+<body>
+	<div class="qishu-digit clearfix">
+        <a href="javascript:;" id="minus"></a>
+        <input type="text" id="digit" value="1" class="qishu-input">
+        <a href="javascript:;" id="add"></a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+.pos-r{
+	position: relative;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+    line-height: 0;
+}
+.clearfix {
+    zoom: 1;
+}
+.fl {
+    float: left;
+    display: inline;
+}
+.fr {
+    float: right;
+    display: inline;
+}
+.fr-eq{
+	position: absolute;
+	height: 100%;
+	top:0;
+	right: 0;
+}
+</style>
+<div class="clearfix pos-r" style="width:600px;">
+	<div class="clearfix" style="width:80%; background:red">
+		<div class="fl">
+			<p>这个是有使用position绝对定位属性</p>
+			<p>所以左边的导航栏高度会随着父容器高度而变化</p>
+		</div>
+	</div>
+	<div class="fr-eq" style="width:20%; background:#ccc">按钮</div>
+</div>
+<script src="jquery1.9.js"></script>
+</body>
+</html>

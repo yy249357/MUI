@@ -1,0 +1,10 @@
+<link href="{#$WEBINFO.site_template#}/css/date_input.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="{#$WEBINFO.site_template#}js/jquery.date_input.js"></script>
+
+
+<input type="text" class="date_input">
+<script>
+$(function(){
+	$('.date_input').date_input();
+})
+</script>

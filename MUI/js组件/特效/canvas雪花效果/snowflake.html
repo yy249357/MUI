@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>雪花飘飘</title>
+<style type="text/css">
+body{width: 100vw;height: 100vh;background: url(images/town2.jpg) no-repeat;-webkit-background-size: cover;background-size: cover;overflow: hidden;}
+.snow-canvas {display: block; width: 100%; height: 100%; top: 0; left: 0; position: fixed; pointer-events: none; } 
+</style>
+</head>
+<body>
+<canvas class="snow-canvas" speed="1" interaction="false" size="2" count="80" opacity="0.00001" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" wind-power="0" image="false" width="1366" height="667"></canvas>
+ 
+<canvas class="snow-canvas" speed="2" interaction="true" size="6" count="30" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" opacity="0.00001" wind-power="2" image="false" width="1366" height="667"></canvas>❄
+
+<canvas class="snow-canvas" speed="3" interaction="true" size="12" count="20" wind-power="5" image="images/snow.png" width="1366" height="667"></canvas>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+<!--[if IE]>
+<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="snow-plugin.js"></script> 
+<script type="text/javascript">
+	$(".snow-canvas").snow();
+</script>
+</body>
+</html>

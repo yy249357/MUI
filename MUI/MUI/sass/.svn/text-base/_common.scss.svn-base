@@ -1,0 +1,122 @@
+// 背景
+.bg{background:$bg-color;}
+.bg-ff{background:#fff!important;}
+
+// 分隔线
+.btb1{
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+}
+.bt1{border-top: 1px solid $grey;}
+.bb1{border-bottom: 1px solid $grey;}
+
+// padding
+.p10{padding:10px;}
+.pt10{padding-top: 10px;}
+.pr10{padding-right: 10px;}
+.pb10{padding-bottom: 10px;}
+.pl10{padding-left: 10px;}
+.ptb10{padding:10px 0;}
+.plr10{padding-left: 10px!important; padding-right: 10px!important;}
+.p20{padding:20px;}
+.pt20{padding-top: 20px;}
+.pr20{padding-right: 20px;}
+.pb20{padding-bottom: 20px;}
+.pl20{padding-left: 20px;}
+.ptb20{padding:20px 0;}
+.plr20{padding-left: 20px!important; padding-right: 20px!important;}
+
+// margin
+.m10{margin:10px;}
+.mt10{margin-top: 10px;}
+.mr10{margin-right: 10px;}
+.mb10{margin-bottom: 10px;}
+.ml10{margin-left: 10px;}
+.mtb10{margin:10px 0;}
+.mlr10{margin-left: 10px!important; margin-right: 10px!important;}
+.m20{margin:20px;}
+.mt20{margin-top: 20px;}
+.mr20{margin-right: 20px;}
+.mb20{margin-bottom: 20px;}
+.ml20{margin-left: 20px;}
+.mtb20{margin:20px 0;}
+.mlr20{margin-left: 20px!important; margin-right: 20px!important;}
+
+// 字体颜色
+.red{color:$red!important;;}
+.yellow{color:$yellow!important;}
+.blue{color:$blue!important;}
+.grey{color:$grey!important;}
+
+// 字体大小
+.fz14{font-size: 14px;}
+.fz12{font-size: 12px;}
+
+// 结构
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+    line-height: 0;
+}
+.clearfix {
+    zoom: 1;
+}
+.fl {
+    float: left;
+    display: inline;
+}
+.fr {
+    float: right;
+    display: inline;
+}
+.ell {
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.trans{
+    -webkit-transition:all 0.3s;    
+            transition:all 0.3s;
+}
+.pos-r{
+	position: relative;
+}
+.pos-a{
+    position: absolute;
+}
+.dib{
+	display: inline-block;
+}
+.oh{
+	overflow: hidden;
+}
+
+//布局
+.z300{z-index: 300;}
+.hidden{display: none;
+.mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    @include opacity(0.6);
+    z-index: 100;
+}
+.bg {
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    height: 40px;
+    z-index: 20;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    background: black;
+}
+

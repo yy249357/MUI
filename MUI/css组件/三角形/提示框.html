@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="maopao.css">
+<title>Test</title>
+<style>
+body{padding: 30px;}
+.speech-bubble {
+  position: relative;
+  background-color: #292929;
+  width: 200px;
+  height: 150px;
+  line-height: 150px; /* 垂直居中 */
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-family: sans-serif;
+}
+ 
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 15px solid;
+}
+ 
+/* 箭头的位置 */
+.speech-bubble-top:after {
+  border-bottom-color: #292929;
+  left: 50%;
+  bottom: 100%;
+  margin-left: -15px;  
+}
+.speech-bubble-right:after {
+  border-left-color: #292929; 
+  left: 100%;
+  top: 50%;
+  margin-top: -15px;   
+}
+ 
+.speech-bubble-bottom:after {
+  border-top-color: #292929;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;  
+}
+ 
+.speech-bubble-left:after {
+  border-right-color: #292929;
+  top: 50%;
+  right: 100%;
+  margin-top: -15px;   
+}
+</style>
+</head>
+<body>
+    <div class="speech-bubble speech-bubble-top">
+        箭头在顶部
+    </div>
+     <br/>
+    <div class="speech-bubble speech-bubble-bottom">
+        箭头在底部
+    </div>
+    <br/>
+    <div class="speech-bubble speech-bubble-left">
+        箭头在左侧
+    </div>
+     <br/>
+    <div class="speech-bubble speech-bubble-right">
+        箭头在右侧
+    </div>
+</body>
+</html>

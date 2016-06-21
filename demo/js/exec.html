@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+var str = "https://mall-mng.corp.zaofengchina.com/html/purchases/#f=ALL_WAIT_FOR_RECEIVE&p=1", _hash = false;
+this.hash('p');
+function hash(key){
+	if(this._hash === false){
+		this._hash = {};
+		var re = /(?:([^&=#]+?)(?:=([^&=#]*?))?)(?:&|$)/ig;
+		var result;
+		while(result = re.exec(str)){
+			console.log(result);
+			this._hash[result[1]] = result[2] === undefined?'':decodeURIComponent(result[2]);
+		}
+	}
+	if(typeof(key) === 'undefined')
+		return this._hash;
+	return this._hash[key] === undefined?null:this._hash[key];
+}
+
+// 结果：
+// ["f=ALL_WAIT_FOR_RECEIVE&", "f", "ALL_WAIT_FOR_RECEIVE", index: 55, input: "https://mall-mng.corp.zaofengchina.com/html/purchases/#f=ALL_WAIT_FOR_RECEIVE&p=1"]
+// ["p=1", "p", "1", index: 78, input: "https://mall-mng.corp.zaofengchina.com/html/purchases/#f=ALL_WAIT_FOR_RECEIVE&p=1"]
+</script>
+</body>
+</html>
